@@ -419,6 +419,11 @@
 
 // display
 
+@mixin display-grid() {
+    display: -ms-grid;     /* IE 10 */
+    display:     grid;     /* None yet */
+}
+
 @mixin display-flex() {
     display: -webkit-box;  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */

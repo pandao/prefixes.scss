@@ -410,7 +410,19 @@
             columns: $value; /* IE10+, Opera */
 }
 
+// clip-path
+
+@mixin clip-path($value) {
+    -webkit-clip-path: $value; /* Chrome, iOS, Safari */
+            clip-path: $value;
+}
+
 // display
+
+@mixin display-grid() {
+    display: -ms-grid;     /* IE 10 */
+    display:     grid;     /* None yet */
+}
 
 @mixin display-flex() {
     display: -webkit-box;  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
@@ -431,6 +443,24 @@
 @mixin filter($value) {
     -webkit-filter: $value;     /* Chrome 23+, Safari 6.0+, Blackberry 10.0+ */
             filter: $value;     /* None yet */
+}
+
+// filter blur
+
+@mixin filter-blur($value : 10px, $ie-value : 10) { 
+            filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=#{$ie-value}, MakeShadow=false);  /* IE6~IE9 */
+    -webkit-filter: blur($value); /* Chrome, Opera, iOS, Safari */
+       -moz-filter: blur($value); /* Firefox(Old) */
+        -ms-filter: blur($value);
+            filter: blur($value);
+}
+
+// font-feature-settings
+
+@mixin font-feature-settings($value) {
+    -webkit-font-feature-settings: $value;  /* Chrome 16-26, Blackberry 10 */
+       -moz-font-feature-settings: $value;  /* Firefox 4-21 */
+            font-feature-settings: $value;  /* IE 10, Safari 4.0-6.0 */
 }
 
 // mask
@@ -478,23 +508,6 @@
 @mixin mask-box-image($value) {
     -webkit-mask-box-image: $value; /* Chrome, iOS, Safari */
             mask-box-image: $value; /* None yet / Non-standard */
-}
-
-// clip-path
-
-@mixin clip-path($value) {
-    -webkit-clip-path: $value; /* Chrome, iOS, Safari */
-            clip-path: $value;
-}
-
-// Filter Blur
-
-@mixin filter-blur($value : 10px, $ie-value : 10) { 
-            filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=#{$ie-value}, MakeShadow=false);  /* IE6~IE9 */
-    -webkit-filter: blur($value); /* Chrome, Opera, iOS, Safari */
-       -moz-filter: blur($value); /* Firefox(Old) */
-        -ms-filter: blur($value);
-            filter: blur($value);
 }
 
 // opacity
