@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;;AAIA,QAAS;ECmLL,qBAAqB,EDjLE,GAAG;ECkLvB,kBAAkB,EDlLE,GAAG;ECmLtB,iBAAiB,EDnLE,GAAG;ECoLrB,gBAAgB,EDpLE,GAAG;ECqLlB,aAAa,EDrLE,GAAG;EC6P1B,kBAAkB,ED5PE,4BAA2B;;EC6P5C,eAAe,ED7PE,4BAA2B;;EC8P3C,cAAc,ED9PE,4BAA2B;;EC+P1C,aAAa,ED/PE,4BAA2B;;ECgQvC,UAAU,EDhQE,4BAA2B;;ECgB/C,+BAAkB;IACd,OAAO,EAAE,GAAG;IACZ,OAAO,EAAE,KAAK;EAGlB,cAAQ;IACJ,KAAK,EAAE,IAAI",
-"sources": ["../simple.scss","file:///D:/APMServ/www/htdocs/prefixes.scss/src/prefixes.scss"],
-"names": [],
-"file": "simple.css"
-}

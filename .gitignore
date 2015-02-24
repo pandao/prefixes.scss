@@ -1,6 +1,7 @@
 .sass-cache/
 node_modules/
 backup/
+examples/*.map
 *.bat
 *.sh
 .project

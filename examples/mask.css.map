@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;;;;;AAIA,KAAM;ECyVF,kBAAkB,EDxVE,uBAAuB;;ECyVnC,UAAU,EDzVE,uBAAuB;;EC6V3C,iBAAiB,ED5VE,KAAK;;EC6VhB,SAAS,ED7VE,KAAK;;ECgXxB,mBAAmB,ED/WE,SAAS;;ECgXtB,WAAW,EDhXE,SAAS",
-"sources": ["../mask.scss","file:///D:/APMServ/www/htdocs/prefixes.scss/src/prefixes.scss"],
-"names": [],
-"file": "mask.css"
-}
