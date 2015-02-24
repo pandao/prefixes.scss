@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import "../src/prefixes";
+
+.radius {
+    @include border-radius(4px);
+}
+
+.radius-top-left {
+    @include border-top-left-radius(4px);
+}
+
+.radius-top-right {
+    @include border-top-right-radius(4px);
+}
+
+.radius-bottom-left {
+    @include border-bottom-left-radius(4px);
+}
+
+.radius-bottom-right {
+    @include border-bottom-right-radius(4px);
+}

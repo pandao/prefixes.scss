@@ -12,7 +12,9 @@
   -moz-transform: rotate(360deg);
   /* Firefox 3.5~16.0 */
   -ms-transform: rotate(360deg);
-  /* IE9 */
+  /* IE9~10 */
+  -o-transform: rotate(360deg);
+  /* Opera 10.5~12.10 */
   transform: rotate(360deg); }
 
 .rotate-x {
@@ -21,7 +23,9 @@
   -moz-transform: rotateX(360deg);
   /* Firefox 3.5~16.0 */
   -ms-transform: rotateX(360deg);
-  /* IE9 */
+  /* IE9~10 */
+  -o-transform: rotateX(360deg);
+  /* Opera 10.5~12.10 */
   transform: rotateX(360deg); }
 
 .rotate-y {
@@ -30,7 +34,9 @@
   -moz-transform: rotateY(360deg);
   /* Firefox 3.5~16.0 */
   -ms-transform: rotateY(360deg);
-  /* IE9 */
+  /* IE9~10 */
+  -o-transform: rotateY(360deg);
+  /* Opera 10.5~12.10 */
   transform: rotateY(360deg); }
 
 /*# sourceMappingURL=transform.css.map */

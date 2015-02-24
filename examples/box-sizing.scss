@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import "../src/prefixes";
+
+.border-box {
+    @include box-sizing(border-box);
+}
+
+.content-box {
+    @include box-sizing(content-box);
+}

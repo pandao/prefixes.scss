@@ -1,0 +1,44 @@
+/*!
+ * prefixes.scss
+ * @author    Pandao
+ * @version   0.1.0
+ * @homePage  https://github.com/pandao/prefixes.scss
+ * @license   MIT
+ * @copyright Copyright (c) 2015
+ */
+.radius {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+.radius-top-left {
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  border-top-left-radius: 4px; }
+
+.radius-top-right {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.radius-bottom-left {
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.radius-bottom-right {
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+/*# sourceMappingURL=border-radius.css.map */
