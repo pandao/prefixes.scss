@@ -463,6 +463,16 @@
             font-feature-settings: $value;  /* IE 10, Safari 4.0-6.0 */
 }
 
+// hyphens
+
+@mixin hyphens($value : auto) {
+    // Chrome 29- and Android 4.0 Browser support "-webkit-hyphens: none", but not the "auto" property.
+    -webkit-hyphens: $value;  /* Safari 5.1+, Chrome */
+       -moz-hyphens: $value;  /* Firefox 6.0+ */
+        -ms-hyphens: $value;  /* IE 10+ */
+            hyphens: $value;  /* None yet */
+}
+
 // mask
 
 @mixin mask-image($value) {
