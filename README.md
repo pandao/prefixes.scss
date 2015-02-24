@@ -54,6 +54,11 @@ CSS(3) prefixes mixins for Sass/Scss.
 
 [Change logs](https://github.com/pandao/prefixes.scss/blob/master/CHANGE.md)
 
+####References
+
+- [CanIUse](http://caniuse.com/ "CanIUse")
+- [Should I Prefix](http://shouldiprefix.com/ "Should I Prefix")
+
 ####License
 
 The [MIT](https://github.com/pandao/prefixes.scss/blob/master/LICENSE) license.
