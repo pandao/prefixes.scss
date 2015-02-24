@@ -515,6 +515,12 @@
             flex-wrap: $value;  /* Firefox 28+, IE11, Opera 12.10 */
 }
 
+@mixin order($value) {
+     -webkit-order: $value; /* Chrome 21+, Safari Not supported. */
+    -ms-flex-order: $value; /* IE 10.0 */
+             order: $value; /* Firefox 20+, Opera 12.10 */
+}
+
 // flow
 
 @mixin flow-into($value) {
