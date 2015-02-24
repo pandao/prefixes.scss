@@ -61,6 +61,25 @@
             transform-style: $style;
 }
 
+// perspective
+
+@mixin perspective($value) {
+    -webkit-perspective: $value;          /* Safari & Chrome */
+            perspective: $value;          /* None yet / Non-standard */
+}
+
+@mixin perspective-origin($value) {
+    -webkit-perspective-origin: $value;   /* Safari & Chrome */
+            perspective-origin: $value;   /* None yet / Non-standard */
+}
+
+@mixin backface-visibility($value : hidden) {
+    -webkit-backface-visibility: $value;  /* Chrome, Safari, Opera 15+ */
+       -moz-backface-visibility: $value;  /* Firefox */
+        -ms-backface-visibility: $value;  /* IE10 */
+            backface-visibility: $value;
+}
+
 // Transitions IE10+
 
 @mixin transition($transition...) {
