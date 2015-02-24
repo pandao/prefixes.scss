@@ -1,0 +1,37 @@
+{
+  "name": "prefixes.scss",
+  "version": "0.1.0",
+  "description": "CSS(3) prefixes mixins for Sass/Scss.",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandao/prefixes.scss.git"
+  },
+  "keywords": [
+    "prefixes.scss",
+    "prefixes",
+    "prefix",
+    "css3",
+    "css"
+  ],
+  "author": "Pandao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandao/prefixes.scss/issues"
+  },
+  "homepage": "https://github.com/pandao/prefixes.scss",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-notify": "^2.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-util": "^3.0.1"
+  }
+}

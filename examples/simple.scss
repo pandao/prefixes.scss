@@ -1,4 +1,6 @@
-@import "../prefixes";
+@charset "UTF-8";
+
+@import "../src/prefixes";
 
 .example {
     @include clearfix();

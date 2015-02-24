@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";;;;;;;;AAEA,QAAQ;ECqLJ,qBAAqB,EDnLE,GAAG;ECoLvB,kBAAkB,EDpLE,GAAG;ECqLtB,iBAAiB,EDrLE,GAAG;ECsLrB,gBAAgB,EDtLE,GAAG;ECuLlB,aAAa,EDvLE,GAAG;EC+P1B,kBAAkB,ED9PE,4BAA2B;;EC+P5C,eAAe,ED/PE,4BAA2B;;ECgQ3C,cAAc,EDhQE,4BAA2B;;ECiQ1C,aAAa,EDjQE,4BAA2B;;ECkQvC,UAAU,EDlQE,4BAA2B;;ECkB/C,+BAAkB;IACd,OAAO,EAAE,GAAG;IACZ,OAAO,EAAE,KAAK;EAGlB,cAAQ;IACJ,KAAK,EAAE,IAAI",
-"sources": ["simple2.sass","../prefixes.scss"],
+"mappings": ";;;;;;;;AAIA,QAAQ;ECmLJ,qBAAqB,EDjLE,GAAG;ECkLvB,kBAAkB,EDlLE,GAAG;ECmLtB,iBAAiB,EDnLE,GAAG;ECoLrB,gBAAgB,EDpLE,GAAG;ECqLlB,aAAa,EDrLE,GAAG;EC6P1B,kBAAkB,ED5PE,4BAA2B;;EC6P5C,eAAe,ED7PE,4BAA2B;;EC8P3C,cAAc,ED9PE,4BAA2B;;EC+P1C,aAAa,ED/PE,4BAA2B;;ECgQvC,UAAU,EDhQE,4BAA2B;;ECgB/C,+BAAkB;IACd,OAAO,EAAE,GAAG;IACZ,OAAO,EAAE,KAAK;EAGlB,cAAQ;IACJ,KAAK,EAAE,IAAI",
+"sources": ["../sass.sass","file:///D:/APMServ/www/htdocs/prefixes.scss/src/prefixes.scss"],
 "names": [],
-"file": "simple2.css"
+"file": "sass.css"
 }

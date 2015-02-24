@@ -3,7 +3,7 @@ CSS(3) prefixes mixins for Sass/Scss.
 
 ####Download
 
-[prefixes.scss](https://raw.githubusercontent.com/pandao/prefixes.scss/master/prefixes.scss)
+[prefixes.scss](https://raw.githubusercontent.com/pandao/prefixes.scss/master/dist/prefixes.scss)
 
 ####Example
 

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import "../src/prefixes";
+
+.mask {    
+    @include mask-image(url(images/hexagon.png)); 
+    @include mask-size(cover); 
+    @include mask-repeat(no-repeat); 
+}
