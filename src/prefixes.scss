@@ -41,7 +41,7 @@
 // Transform
 
 @mixin transform($transform) {
-    -webkit-transform: $transform;  /* Safari & Chrome */
+    -webkit-transform: $transform;  /* Safari, Chrome */
        -moz-transform: $transform;  /* Firefox 3.5~16.0 */
         -ms-transform: $transform;  /* IE9 */
             transform: $transform;
@@ -64,12 +64,12 @@
 // perspective
 
 @mixin perspective($value) {
-    -webkit-perspective: $value;          /* Safari & Chrome */
+    -webkit-perspective: $value;          /* Safari, Chrome */
             perspective: $value;          /* None yet / Non-standard */
 }
 
 @mixin perspective-origin($value) {
-    -webkit-perspective-origin: $value;   /* Safari & Chrome */
+    -webkit-perspective-origin: $value;   /* Safari, Chrome */
             perspective-origin: $value;   /* None yet / Non-standard */
 }
 
@@ -83,7 +83,7 @@
 // Transitions IE10+
 
 @mixin transition($transition...) {
-    -webkit-transition: $transition;  /* Safari & Chrome */
+    -webkit-transition: $transition;  /* Safari, Chrome */
        -moz-transition: $transition;  /* Firefox 4.0~16.0 */
             transition: $transition;  /* IE >9, FF >15, Opera >12.0 */
 }
@@ -242,35 +242,35 @@
 // border-image
 
 @mixin border-image($value) {
-    -webkit-border-image: $value;   /* Safari 5 & Chrome */
+    -webkit-border-image: $value;   /* Safari 5, Chrome */
        -moz-border-image: $value;   /* Firefox 3.5~15.0 */
          -o-border-image: $value;   /* Opera */
-            border-image: $value;   /* Safari 6+ & Chrome & New */
+            border-image: $value;   /* Safari 6+, Chrome, New */
 }
 
 @mixin border-image-source($value) {
-    -webkit-border-image-source: $value;   /* Safari 5 & Chrome */
-            border-image-source: $value;   /* Safari 6+ & Chrome & IE11+ & Opera 15+ */
+    -webkit-border-image-source: $value;   /* Safari 5, Chrome */
+            border-image-source: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
 }
 
 @mixin border-image-slice($value) {
-    -webkit-border-image-slice: $value;   /* Safari 5 & Chrome */
-            border-image-slice: $value;   /* Safari 6+ & Chrome & IE11+ & Opera 15+ */
+    -webkit-border-image-slice: $value;   /* Safari 5, Chrome */
+            border-image-slice: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
 }
 
 @mixin border-image-width($value) {
-    -webkit-border-image-width: $value;   /* Safari 5 & Chrome */
-            border-image-width: $value;   /* Safari 6+ & Chrome & IE11+ & Opera 15+ */
+    -webkit-border-image-width: $value;   /* Safari 5, Chrome */
+            border-image-width: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
 }
 
 @mixin border-image-outset($value) {
-    -webkit-border-image-outset: $value;   /* Safari 5 & Chrome */
-            border-image-outset: $value;   /* Safari 6+ & Chrome & IE11+ & Opera 15+ */
+    -webkit-border-image-outset: $value;   /* Safari 5, Chrome */
+            border-image-outset: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
 }
 
 @mixin border-image-repeat($value) {
-    -webkit-border-image-repeat: $value;   /* Safari 5 & Chrome */
-            border-image-repeat: $value;   /* Safari 6+ & Chrome & IE11+ & Opera 15+ */
+    -webkit-border-image-repeat: $value;   /* Safari 5, Chrome */
+            border-image-repeat: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
 }
 
 // box-shadow
@@ -280,7 +280,7 @@
        -moz-box-shadow: $value;      /* Firefox */
         -ms-box-shadow: $value;      /* IE9 */
          -o-box-shadow: $value;      /* Opera(Old) */
-            box-shadow: $value;      /* IE9+ & News */
+            box-shadow: $value;      /* IE9+, News */
 }
 
 //box-sizing
@@ -294,7 +294,7 @@
 // box-reflect
 
 @mixin box-reflect($value) {
-    -webkit-box-reflect: $value; /* Chrome & Safari & iOS & Blackberry */
+    -webkit-box-reflect: $value; /* Chrome, Safari, iOS, Blackberry */
             box-reflect: $value; /* None yet / Non-standard */
 }
 
@@ -311,11 +311,11 @@
 }
 
 @mixin background-clip($value) {
-    background-clip: $value;  /* Firefox 4.0 & IE9+ & Opera 10.5+ & Chrome & Safari 3.0+ */
+    background-clip: $value;  /* Firefox 4.0, IE9+, Opera 10.5+, Chrome, Safari 3.0+ */
 }
 
 @mixin background-origin($value) {
-    background-origin: $value;  /* IE9+ & Other */
+    background-origin: $value;  /* IE9+, Other */
 }
 
 @mixin background-size($value) {
@@ -329,20 +329,64 @@
 
 @mixin column-count($value) {
   -webkit-column-count: $value; /* Chrome, Safari, Android, Blackberry  */
-     -moz-column-count: $value; /* Firefox */
+     -moz-column-count: $value; /* Firefox 34+ */
           column-count: $value; /* IE 10+, Opera 11.1+, New */
 }
 
 @mixin column-gap($value) {
   -webkit-column-gap: $value;  /* Chrome, Safari, Android, Blackberry  */
-     -moz-column-gap: $value;  /* Firefox */
+     -moz-column-gap: $value;  /* Firefox 34+ */
           column-gap: $value;  /* IE 10+, Opera 11.1+, New */
 }
 
 @mixin column-rule($value) {
     -webkit-column-rule: $value;  /* Chrome, Safari, Android, Blackberry  */
-       -moz-column-rule: $value;  /* Firefox */
+       -moz-column-rule: $value;  /* Firefox 34+ */
             column-rule: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule-color($value) {
+    -webkit-column-rule-color: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule-color: $value;  /* Firefox 34+ */
+            column-rule-color: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule-style($value) {
+    -webkit-column-rule-style: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule-style: $value;  /* Firefox 34+ */
+            column-rule-style: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule-width($value) {
+    -webkit-column-rule-width: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule-width: $value;  /* Firefox 34+ */
+            column-rule-width: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-fill($value) {
+ -webkit-column-fill: $value;  /* None yet */
+    -moz-column-fill: $value;  /* Firefox 13.0+ */
+         column-fill: $value;  /* None yet / Non-standard */
+}
+
+@mixin column-span($value) {
+    -webkit-column-span: $value;  /* Safari, Chrome, iOS 7.0+, Android, Opera 26+ */
+       -moz-column-span: $value;  /* Firefox 34+ */
+            column-span: $value;  /* IE10+, Opera Mini */
+}
+
+@mixin column-width($value) {
+    -webkit-column-width: $value; /* Safari, Chrome, iOS 7.0+, Android, Opera 26+ */
+       -moz-column-width: $value; /* Firefox */
+            column-width: $value; /* IE10+, Opera */
+}
+
+// columns: column-width column-count;
+
+@mixin columns($value) {
+    -webkit-columns: $value; /* Safari, Chrome, iOS 7.0+, Android, Opera 26+ */
+       -moz-columns: $value; /* Firefox */
+            columns: $value; /* IE10+, Opera */
 }
 
 // display

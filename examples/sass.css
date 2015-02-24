@@ -21,7 +21,7 @@
   -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   /* Opera(Old) */
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  /* IE9+ & News */ }
+  /* IE9+, News */ }
   .example:before, .example:after {
     content: " ";
     display: table; }
