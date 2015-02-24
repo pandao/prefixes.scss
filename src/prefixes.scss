@@ -133,6 +133,23 @@
             transition-delay: $delay;
 }
 
+// Flex align
+
+@mixin align-content($value) {
+    -webkit-align-content: $value;  /* Chrome 21.0+, Safari Not supported. */
+            align-content: $value;  /* Firefox 28+, Opera 12.10, IE Not supported. */
+}
+
+@mixin align-items($value) {
+    -webkit-align-items: $value; /* Safari 7.0+, Chrome 21.0+ */
+            align-items: $value; /* Firefox 20.0+, IE11+, Opera 12.10 */
+}
+
+@mixin align-self($value) {
+    -webkit-align-self: $value; /* Chrome 21~36, Safari Not supported. */
+            align-self: $value; /* Firefox 28+, Opera 12.10, IE Not supported. */
+}
+
 // Animations IE10+
 
 @mixin keyframes($name) {
@@ -438,6 +455,36 @@
                 flex: $value;   /* New, Spec - Firefox, Chrome, Opera */
 }
 
+@mixin flex-direction($value) {
+    -webkit-flex-direction: $value;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+            flex-direction: $value;  /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin flex-basis($value) {
+    -webkit-flex-basis: $value;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+            flex-basis: $value;  /* Firefox 22+, IE11, Opera 12.10 */
+}
+
+@mixin flex-flow($value) {
+    -webkit-flex-flow: $value;   /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+            flex-flow: $value;   /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin flex-grow($value) {
+    -webkit-flex-grow: $value;   /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+            flex-grow: $value;   /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+@mixin flex-shrink($value) {
+    -webkit-flex-shrink: $value; /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+            flex-shrink: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+@mixin flex-wrap($value) {
+    -webkit-flex-wrap: $value;  /* Safari 6.1+, Chrome 21.0+, Android 4.4+, iOS 7.0+ */
+            flex-wrap: $value;  /* Firefox 28+, IE11, Opera 12.10 */
+}
+
 // flow
 
 @mixin flow-into($value) {
@@ -485,6 +532,11 @@
        -moz-hyphens: $value;  /* Firefox 6.0+ */
         -ms-hyphens: $value;  /* IE 10+ */
             hyphens: $value;  /* None yet */
+}
+
+@mixin justify-content($value) {
+    -webkit-justify-content: $value; /* Chrome 21+, Safari Not supported. */
+            justify-content: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
 }
 
 // mask
