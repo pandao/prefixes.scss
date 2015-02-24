@@ -518,12 +518,22 @@
             filter: blur($value);
 }
 
+@mixin font-kerning($value) {
+    -webkit-font-kerning: $value;
+            font-kerning: $value;
+}
+
 // font-feature-settings
 
 @mixin font-feature-settings($value) {
     -webkit-font-feature-settings: $value;  /* Chrome 16-26, Blackberry 10 */
        -moz-font-feature-settings: $value;  /* Firefox 4-21 */
             font-feature-settings: $value;  /* IE 10, Safari 4.0-6.0 */
+}
+
+@mixin font-variant-ligatures($value) {
+    -webkit-font-variant-ligatures: $value;
+            font-variant-ligatures: $value;
 }
 
 // hyphens
