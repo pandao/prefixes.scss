@@ -12,7 +12,16 @@ CSS(3) prefixes mixins for Sass/Scss.
         @include border-radius(4px);
         @include box-shadow(0 1px 5px rgba(0, 0, 0, .5));
     }
-    
+
+**Sass:**
+
+    @import "../prefixes"
+
+    .example
+        @include clearfix()
+        @include border-radius(4px)
+        @include box-shadow(0 1px 5px rgba(0, 0, 0, .5))
+
 **CSS:**
 
     .example {
