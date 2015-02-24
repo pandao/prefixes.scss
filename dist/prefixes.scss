@@ -438,6 +438,20 @@
                 flex: $value;   /* New, Spec - Firefox, Chrome, Opera */
 }
 
+// flow
+
+@mixin flow-into($value) {
+    -webkit-flow-into: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
+        -ms-flow-into: $value;  /* IE10+ */
+            flow-into: $value;  /* None yet */
+}
+
+@mixin flow-from($value) {
+    -webkit-flow-from: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
+        -ms-flow-from: $value;  /* IE10+ */
+            flow-from: $value;  /* None yet */
+}
+
 // filter
 
 @mixin filter($value) {
