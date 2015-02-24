@@ -478,6 +478,11 @@
     display: flex;         /* New, Spec - Firefox, Chrome, Opera */
 }
 
+@mixin inline-flex($value) {
+    -webkit-inline-flex: $value; /* Chrome 21.0+ */
+            inline-flex: $value; /* Firefox 20+, Opera 12.5 */
+}
+
 @mixin flex($value) {
     -webkit-box-flex: $value;   /* Old - iOS 6-, Safari 3.1~6 */
         -webkit-flex: $value;   /* Safari 6.1+. iOS 7.1+, Blackberry 10 */
