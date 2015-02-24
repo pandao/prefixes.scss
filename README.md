@@ -58,6 +58,7 @@ CSS(3) prefixes mixins for Sass/Scss.
 
 - [CanIUse](http://caniuse.com/ "CanIUse")
 - [Should I Prefix](http://shouldiprefix.com/ "Should I Prefix")
+- [CtripUED -webkit CSS lib](http://ued.ctrip.com/webkitcss/index.html "CtripUED -webkit CSS lib")
 
 ####License
 
