@@ -349,11 +349,13 @@
 }
 
 @mixin background-clip($value) {
-    background-clip: $value;  /* Firefox 4.0, IE9+, Opera 10.5+, Chrome, Safari 3.0+ */
+    -webkit-background-clip: $value;
+            background-clip: $value;  /* Firefox 4.0, IE9+, Opera 10.5+, Chrome, Safari 3.0+ */
 }
 
 @mixin background-origin($value) {
-    background-origin: $value;  /* IE9+, Other */
+    -webkit-background-origin: $value; 
+            background-origin: $value;  /* IE9+, Other */
 }
 
 @mixin background-size($value) {
@@ -601,6 +603,20 @@
 @mixin opacity($opacity) {
     opacity: $opacity; /* W3C */
      filter: alpha(opacity=($opacity * 100)); /* IE */
+}
+
+// padding
+
+@mixin padding-start($value) {
+    -webkit-padding-start: $value; /* Safari, Chrome, WebKit */
+       -moz-padding-start: $value; /* Firefox 3+ */
+            padding-start: $value;
+}
+
+@mixin padding-end($value) {
+    -webkit-padding-end: $value; /* Safari, Chrome, WebKit */
+       -moz-padding-end: $value; /* Firefox 3+ */
+            padding-end: $value;
 }
 
 // input-placeholder
