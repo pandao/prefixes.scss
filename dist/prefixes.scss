@@ -426,6 +426,13 @@
                 flex: $value;   /* New, Spec - Firefox, Chrome, Opera */
 }
 
+// filter
+
+@mixin filter($value) {
+    -webkit-filter: $value;     /* Chrome 23+, Safari 6.0+, Blackberry 10.0+ */
+            filter: $value;     /* None yet */
+}
+
 // mask
 
 @mixin mask-image($value) {
