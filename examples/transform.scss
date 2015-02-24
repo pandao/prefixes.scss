@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import "../src/prefixes";
+
+.rotate {
+    @include transform(rotate(360deg));    
+}
+
+.rotate-x {
+    @include transform(rotateX(360deg));    
+}
+
+.rotate-y {
+    @include transform(rotateY(360deg));
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import "../src/prefixes";
+        
+[class*=animation-] { 
+    @include animation-duration(0.5s); 
+    @include animation-timing-function(ease-out);
+    @include animation-fill-mode(both);
+}
+
+@include keyframes(fade-in) {
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    }	
+}
+
+@include keyframes(fade-out) {
+    0% { 
+        opacity: 1; 
+    } 
+    100%{ 
+        opacity: 0; 
+    }	
+}
+
+.animation-fade-in {
+    @include animation-name(fade-in);      
+}
+
+.animation-fade-out {
+    @include animation-name(fade-out);   
+}
+
+.logo-fade-in {
+    @include animation(fade-in 1s ease-out);
+}
