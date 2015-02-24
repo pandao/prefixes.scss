@@ -1,6 +1,10 @@
 # Prefixes.scss
 CSS(3) prefixes mixins for Sass/Scss.
 
+####Download
+
+[prefixes.scss](https://raw.githubusercontent.com/pandao/prefixes.scss/master/prefixes.scss)
+
 ####Example
 
 **Scss:**
@@ -45,9 +49,13 @@ CSS(3) prefixes mixins for Sass/Scss.
     .example:after {
         clear: both; 
     }
+    
+####Changes
+
+[Change logs](https://github.com/pandao/prefixes.scss/blob/master/CHANGE.md)
 
 ####License
 
-The MIT license.
+The [MIT](https://github.com/pandao/prefixes.scss/blob/master/LICENSE) license.
 
 Copyright (c) 2015 Pandao
