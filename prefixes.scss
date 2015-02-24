@@ -278,7 +278,7 @@
 
 @mixin box-reflect($value) {
     -webkit-box-reflect: $value; /* Chrome & Safari & iOS & Blackberry */
-            box-reflect: $value;
+            box-reflect: $value; /* None yet / Non-standard */
 }
 
 // background  
@@ -305,7 +305,27 @@
     -webkit-background-size: $value;  /* Chrome, iOS, Safari */
        -moz-background-size: $value;  /* Firefox 3.6~4.0 */
          -o-background-size: $value;  /* Opera 9.5 */
-            background-size: $value;  /* IE9+ */
+            background-size: $value;  /* IE9+, New */
+}
+
+// Column
+
+@mixin column-count($value) {
+  -webkit-column-count: $value; /* Chrome, Safari, Android, Blackberry  */
+     -moz-column-count: $value; /* Firefox */
+          column-count: $value; /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-gap($value) {
+  -webkit-column-gap: $value;  /* Chrome, Safari, Android, Blackberry  */
+     -moz-column-gap: $value;  /* Firefox */
+          column-gap: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule($value) {
+    -webkit-column-rule: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule: $value;  /* Firefox */
+            column-rule: $value;  /* IE 10+, Opera 11.1+, New */
 }
 
 // display
@@ -328,47 +348,47 @@
 
 @mixin mask-image($value) {
     -webkit-mask-image: $value; /* Chrome, iOS, Safari */
-            mask-image: $value;
+            mask-image: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-size($value) {
     -webkit-mask-size: $value; /* Chrome, iOS, Safari */
-            mask-size: $value;
+            mask-size: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-clip($value) {
     -webkit-mask-clip: $value; /* Chrome, iOS, Safari */
-            mask-clip: $value;
+            mask-clip: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-position($value) {
     -webkit-mask-position: $value; /* Chrome, iOS, Safari */
-            mask-position: $value;
+            mask-position: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-origin($value) {
     -webkit-mask-origin: $value; /* Chrome, iOS, Safari */
-            mask-origin: $value;
+            mask-origin: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-repeat($value) {
     -webkit-mask-repeat: $value; /* Chrome, iOS, Safari */
-            mask-repeat: $value;
+            mask-repeat: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-attachment($value) {
     -webkit-mask-attachment: $value; /* Chrome, iOS, Safari */
-            mask-attachment: $value;
+            mask-attachment: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-composite($value) {
     -webkit-mask-composite: $value; /* Chrome, iOS, Safari */
-            mask-composite: $value;
+            mask-composite: $value; /* None yet / Non-standard */
 }
 
 @mixin mask-box-image($value) {
     -webkit-mask-box-image: $value; /* Chrome, iOS, Safari */
-            mask-box-image: $value;
+            mask-box-image: $value; /* None yet / Non-standard */
 }
 
 // clip-path
@@ -383,7 +403,7 @@
 @mixin filter-blur($value : 10px, $ie-value : 10) { 
             filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=#{$ie-value}, MakeShadow=false);  /* IE6~IE9 */
     -webkit-filter: blur($value); /* Chrome, Opera, iOS, Safari */
-       -moz-filter: blur($value);
+       -moz-filter: blur($value); /* Firefox(Old) */
         -ms-filter: blur($value);
             filter: blur($value);
 }
