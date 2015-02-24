@@ -561,6 +561,16 @@
             mask-position: $value; /* None yet / Non-standard */
 }
 
+@mixin mask-position-x($value) {
+    -webkit-mask-position-x: $value; /* Chrome, iOS, Safari */
+            mask-position-x: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-position-y($value) {
+    -webkit-mask-position-y: $value; /* Chrome, iOS, Safari */
+            mask-position-y: $value; /* None yet / Non-standard */
+}
+
 @mixin mask-origin($value) {
     -webkit-mask-origin: $value; /* Chrome, iOS, Safari */
             mask-origin: $value; /* None yet / Non-standard */
