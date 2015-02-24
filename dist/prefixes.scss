@@ -551,6 +551,13 @@
             justify-content: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
 }
 
+// line
+
+@mixin line-break($value) {
+    -webkit-line-break: $value;
+            line-break: $value;
+}
+
 // mask
 
 @mixin mask-image($value) {
@@ -627,6 +634,70 @@
     -webkit-padding-end: $value; /* Safari, Chrome, WebKit */
        -moz-padding-end: $value; /* Firefox 3+ */
             padding-end: $value;
+}
+
+// Text
+
+@mixin text-size-adjust($value) {
+    -webkit-text-size-adjust: $value; /* Chrome 27+ */
+       -moz-text-size-adjust: $value; /* Firefox */
+            text-size-adjust: $value; /* None yet */
+}
+
+@mixin text-align-last($value) {
+    -webkit-text-align-last: $value;  /* Chrome 35+, Safari Not supported. */
+       -moz-text-align-last: $value;  /* Firefox 12.0 */
+            text-align-last: $value;  /* IE 5.5+ */
+}
+
+@mixin text-justify($value) {
+    -webkit-text-justify: $value;
+            text-justify: $value;
+}
+
+@mixin text-decoration-color($value) {
+    -webkit-text-decoration-color: $value;
+            text-decoration-color: $value;
+}
+
+@mixin text-decoration-line($value) {
+    -webkit-text-decoration-line: $value;
+            text-decoration-line: $value;
+}
+
+@mixin text-decoration-style($value) {
+    -webkit-text-decoration-style: $value;
+            text-decoration-style: $value;
+}
+
+@mixin text-orientation($value) {
+    -webkit-text-orientation: $value;
+            text-orientation: $value;
+}
+
+@mixin text-underline-position($value) {
+    -webkit-text-underline-position: $value; /* Chrome 33 not fully supported. */
+            text-underline-position: $value; /* IE 5 not fully supported. */
+}
+
+@mixin text-emphasis($value) {
+    -webkit-text-emphasis: $value; /* Blink */
+            text-emphasis: $value; /* WebKit */
+}
+
+@mixin text-emphasis-color($value) {
+    -webkit-text-emphasis-color: $value; /* Blink */
+            text-emphasis-color: $value; /* WebKit */
+}
+
+@mixin text-emphasis-style($value) {
+    -webkit-text-emphasis-style: $value; /* Blink */
+            text-emphasis-style: $value; /* WebKit */
+}
+
+@mixin text-emphasis-position($value) {
+    -webkit-text-emphasis-position: $value; /* Blink */
+            text-emphasis-position: $value; /* WebKit */
 }
 
 // input-placeholder
