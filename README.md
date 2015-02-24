@@ -58,7 +58,11 @@ CSS(3) prefixes mixins for Sass/Scss.
 
 - [CanIUse](http://caniuse.com/ "CanIUse")
 - [Should I Prefix](http://shouldiprefix.com/ "Should I Prefix")
+- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference "MDN CSS Reference")
+    - [Mozilla Extensions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Mozilla_Extensions "Mozilla Extensions")
+    - [Webkit Extensions](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Webkit_Extensions "Webkit Extensions")
 - [CtripUED -webkit CSS lib](http://ued.ctrip.com/webkitcss/index.html "CtripUED -webkit CSS lib")
+- [Vendor-prefixed CSS Property Overview](http://peter.sh/experiments/vendor-prefixed-css-property-overview/ "Vendor-prefixed CSS Property Overview")
 
 ####License
 
