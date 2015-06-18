@@ -2,9 +2,16 @@
 
 CSS(3) prefixes mixins library for Sass/Scss. Free installation, custom you need css prefixes.
 
-#### Download
+#### Install
 
-[prefixes.scss](https://raw.githubusercontent.com/pandao/prefixes.scss/master/dist/prefixes.scss)
+Bower install :
+
+	bower install prefixes.scss
+
+Download : 
+
+- [zip](https://github.com/pandao/prefixes.scss/archive/master.zip)
+- [prefixes.scss](https://raw.githubusercontent.com/pandao/prefixes.scss/master/dist/prefixes.scss)
 
 #### Example
 
