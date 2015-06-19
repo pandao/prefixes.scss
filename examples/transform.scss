@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "../src/prefixes";
+@import "../dist/prefixes";
 
 .rotate {
     @include transform(rotate(360deg));    

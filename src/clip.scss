@@ -1,0 +1,9 @@
+
+// Clip
+
+// clip-path
+
+@mixin clip-path($value) {
+    -webkit-clip-path: $value; /* Chrome, iOS, Safari */
+            clip-path: $value;
+}

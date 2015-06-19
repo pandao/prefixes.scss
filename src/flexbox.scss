@@ -1,0 +1,219 @@
+
+// Flexbox
+
+@mixin display-flex() {
+    display: -webkit-box;  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* New - Safari 6.1+. iOS 7.1+, Blackberry 10 */
+	display: -moz-flex;
+    display: flex;         /* New, Spec - Firefox, Chrome, Opera */
+}
+
+// alias display-flex()
+
+@mixin flexbox() {
+    @include display-flex();
+}
+
+@mixin inline-flex() {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: -moz-inline-flex;
+	display: inline-flex;
+}
+
+// alias inline-flex()
+
+@mixin inline-flexbox() {
+    @include inline-flex();
+}
+
+@mixin flex-inline($value) {
+    -webkit-inline-flex: $value; /* Chrome 21.0+ */
+       -moz-inline-flex: $value;
+        -ms-inline-flex: $value;
+            inline-flex: $value; /* Firefox 20+, Opera 12.5 */
+}
+
+@mixin flex($value : 1) {
+    -webkit-box-flex: $value;   /* Old - iOS 6-, Safari 3.1~6 */
+	   -moz-box-flex: $value;
+        -webkit-flex: $value;   /* Safari 6.1+. iOS 7.1+, Blackberry 10 */
+           -moz-flex: $value;
+            -ms-flex: $value;   /* IE 10 */
+                flex: $value;   /* New, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin flex-direction($value: row) {
+	@if $value == row-reverse {
+		-webkit-box-direction: reverse;
+		   -webkit-box-orient: horizontal;
+	} @else if $value == column {
+		-webkit-box-direction: normal;
+		   -webkit-box-orient: vertical;
+	} @else if $value == column-reverse {
+		-webkit-box-direction: reverse;
+		   -webkit-box-orient: vertical;
+	} @else {
+		-webkit-box-direction: normal;
+		   -webkit-box-orient: horizontal;
+	}
+
+	-webkit-flex-direction: $value; /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+	   -moz-flex-direction: $value;
+	    -ms-flex-direction: $value;
+	        flex-direction: $value;  /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin flex-basis($value : auto) {
+         -webkit-flex-basis: $value;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+	-ms-flex-preferred-size: $value;
+	        -moz-flex-basis: $value;
+                 flex-basis: $value;  /* Firefox 22+, IE11, Opera 12.10 */
+}
+
+@mixin flex-flow($values: (row nowrap)) {
+	-webkit-flex-flow: $values;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+	   -moz-flex-flow: $values;
+        -ms-flex-flow: $values;
+	        flex-flow: $values;  /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin flex-grow($value : 0) {
+     -webkit-box-flex: $value;
+    -webkit-flex-grow: $value;   /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+    -ms-flex-positive: $value;
+       -moz-flex-grow: $value;
+            flex-grow: $value;   /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+@mixin flex-shrink($value) {
+    -webkit-flex-shrink: $value; /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+       -moz-flex-shrink: $value;
+            flex-shrink: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+@mixin flex-wrap($value: nowrap) {
+	-webkit-flex-wrap: $value;  /* Safari 6.1+, Chrome 21.0+, Android 4.4+, iOS 7.0+ */
+	   -moz-flex-wrap: $value;
+
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	} @else { 
+		-ms-flex-wrap: $value; 
+	}
+
+	        flex-wrap: $value; /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin order($value : 1) {
+	-webkit-box-ordinal-group: $value + 1;
+                -webkit-order: $value; /* Chrome 21+, Safari Not supported. */
+               -ms-flex-order: $value; /* IE 10.0 */
+	               -moz-order: $value;
+                        order: $value; /* Firefox 20+, Opera 12.10 */
+}
+
+// alias order()
+
+@mixin flex-order($args...) {
+    @include order($args...); 
+}
+
+// flow
+
+@mixin flow-into($value) {
+    -webkit-flow-into: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
+       -moz-flow-into: $value;
+        -ms-flow-into: $value;  /* IE10+ */
+            flow-into: $value;  /* None yet */
+}
+
+@mixin flow-from($value) {
+    -webkit-flow-from: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
+       -moz-flow-from: $value;
+        -ms-flow-from: $value;  /* IE10+ */
+            flow-from: $value;  /* None yet */
+}
+
+// Flex align
+
+// Values: flex-start | flex-end | center | space-between | space-around | stretch
+
+@mixin align-content($value: stretch) {
+	 -webkit-align-content: $value;  /* Chrome 21.0+, Safari Not supported. */
+	    -moz-align-content: $value;
+
+	@if $value == flex-start {
+		-ms-flex-line-pack: start;
+	} @else if $value == flex-end {
+		-ms-flex-line-pack: end;
+	} @else {
+		-ms-flex-line-pack: $value;
+	}
+
+	         align-content: $value;  /* Firefox 28+, Opera 12.10, IE Not supported. */
+}
+
+@mixin align-items($value: stretch) {
+	@if $value == flex-start {
+		-webkit-box-align: start;
+		   -ms-flex-align: start;
+	} @else if $value == flex-end {
+		-webkit-box-align: end;
+		   -ms-flex-align: end;
+	} @else {
+		-webkit-box-align: $value;
+		   -ms-flex-align: $value;
+	}
+
+	-webkit-align-items: $value; /* Safari 7.0+, Chrome 21.0+ */
+	   -moz-align-items: $value;
+	        align-items: $value; /* Firefox 20.0+, IE11+, Opera 12.10 */
+}
+
+// Values: auto | flex-start | flex-end | center | baseline | stretch
+
+@mixin align-self($value: auto) {
+	-webkit-align-self: $value;  /* Chrome 21~36, Safari Not supported. */
+	   -moz-align-self: $value;
+
+	@if $value == flex-start {
+		-ms-flex-item-align: start;
+	} @else if $value == flex-end {
+		-ms-flex-item-align: end;
+	} @else {
+		-ms-flex-item-align: $value;
+	}
+
+	align-self: $value;    /* Firefox 28+, Opera 12.10, IE Not supported. */
+}
+
+@mixin justify-content($value : flex-start) {
+	@if $value == flex-start {
+		-webkit-box-pack: start;
+		   -ms-flex-pack: start;
+	} @else if $value == flex-end {
+		-webkit-box-pack: end;
+		   -ms-flex-pack: end;
+	} @else if $value == space-around {
+		   -ms-flex-pack: distribute;
+	} @else if $value == space-between {
+		-webkit-box-pack: justify;
+		   -ms-flex-pack: justify;	
+	} @else {
+        -webkit-box-pack: $value;
+		   -ms-flex-pack: $value;
+	}
+
+    -webkit-justify-content: $value; /* Chrome 21+, Safari Not supported. */
+       -moz-justify-content: $value; /* Chrome 21+, Safari Not supported. */
+            justify-content: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+// alias justify-content
+
+@mixin flex-justify($args...) {
+    @include justify-content($args...);
+}

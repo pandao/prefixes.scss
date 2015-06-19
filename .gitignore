@@ -1,6 +1,10 @@
 .sass-cache/
 node_modules/
 backup/
+demo/
+research/
+test/
+tests/
 examples/*.map
 *.bat
 *.sh

@@ -1,7 +1,7 @@
 {
   "name": "prefixes.scss",
-  "version": "0.1.0",
-  "description": "CSS(3) prefixes mixins for Sass/Scss.",
+  "version": "0.2.0",
+  "description": "CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes.",
   "directories": {
     "doc": "docs",
     "example": "examples",
@@ -28,10 +28,13 @@
   },
   "homepage": "https://github.com/pandao/prefixes.scss",
   "devDependencies": {
+    "dateformatter": "^0.1.0",
     "gulp": "^3.8.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-header": "^1.2.2",
     "gulp-notify": "^2.1.0",
     "gulp-rename": "^1.2.0",
-    "gulp-ruby-sass": "^0.7.1",
+    "gulp-sass": "^2.0.1",
     "gulp-util": "^3.0.1"
   }
 }

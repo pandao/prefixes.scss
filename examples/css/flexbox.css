@@ -1,0 +1,160 @@
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+.display-flex {
+  display: -webkit-box;
+  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* New - Safari 6.1+. iOS 7.1+, Blackberry 10 */
+  display: -moz-flex;
+  display: flex;
+  /* New, Spec - Firefox, Chrome, Opera */ }
+
+.flexbox {
+  display: -webkit-box;
+  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* New - Safari 6.1+. iOS 7.1+, Blackberry 10 */
+  display: -moz-flex;
+  display: flex;
+  /* New, Spec - Firefox, Chrome, Opera */ }
+
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: -moz-inline-flex;
+  display: inline-flex; }
+
+.inline-flexbox {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: -moz-inline-flex;
+  display: inline-flex; }
+
+.column-item {
+  -webkit-box-flex: 1;
+  /* Old - iOS 6-, Safari 3.1~6 */
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  /* Safari 6.1+. iOS 7.1+, Blackberry 10 */
+  -moz-flex: 1;
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* New, Spec - Firefox, Chrome, Opera */
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* Firefox 28+, IE11, Opera 12.10 */
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  /* Chrome 21+, Safari Not supported. */
+  -ms-flex-order: 1;
+  /* IE 10.0 */
+  -moz-order: 1;
+  order: 1;
+  /* Firefox 20+, Opera 12.10 */ }
+
+.row-item {
+  -webkit-box-flex: 1;
+  /* Old - iOS 6-, Safari 3.1~6 */
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  /* Safari 6.1+. iOS 7.1+, Blackberry 10 */
+  -moz-flex: 1;
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* New, Spec - Firefox, Chrome, Opera */
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  /* Chrome 21+, Safari Not supported. */
+  -ms-flex-order: 2;
+  /* IE 10.0 */
+  -moz-order: 2;
+  order: 2;
+  /* Firefox 20+, Opera 12.10 */ }
+
+.flex-inline {
+  -webkit-inline-flex: 2;
+  /* Chrome 21.0+ */
+  -moz-inline-flex: 2;
+  -ms-inline-flex: 2;
+  inline-flex: 2;
+  /* Firefox 20+, Opera 12.5 */ }
+
+.nowarp {
+  -webkit-flex-wrap: nowrap;
+  /* Safari 6.1+, Chrome 21.0+, Android 4.4+, iOS 7.0+ */
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap;
+  /* Firefox 28+, IE11, Opera 12.10 */ }
+
+.flex-flow {
+  -webkit-flex-flow: row nowrap;
+  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  /* Firefox 28+, IE11, Opera 12.10 */ }
+
+.flex-grow {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+  -ms-flex-positive: 0;
+  -moz-flex-grow: 0;
+  flex-grow: 0;
+  /* Firefox 20+, Opera 12.10, IE Not supported. */ }
+
+.flex-basis {
+  -webkit-flex-basis: auto;
+  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+  -ms-flex-preferred-size: auto;
+  -moz-flex-basis: auto;
+  flex-basis: auto;
+  /* Firefox 22+, IE11, Opera 12.10 */ }
+
+.flex-justify {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  /* Chrome 21+, Safari Not supported. */
+  -moz-justify-content: flex-start;
+  /* Chrome 21+, Safari Not supported. */
+  justify-content: flex-start;
+  /* Firefox 20+, Opera 12.10, IE Not supported. */ }
+
+.align-items {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  /* Safari 7.0+, Chrome 21.0+ */
+  -moz-align-items: stretch;
+  align-items: stretch;
+  /* Firefox 20.0+, IE11+, Opera 12.10 */ }
+
+.align-self {
+  -webkit-align-self: auto;
+  /* Chrome 21~36, Safari Not supported. */
+  -moz-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  /* Firefox 28+, Opera 12.10, IE Not supported. */ }
+
+.align-content {
+  -webkit-align-content: stretch;
+  /* Chrome 21.0+, Safari Not supported. */
+  -moz-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  /* Firefox 28+, Opera 12.10, IE Not supported. */ }

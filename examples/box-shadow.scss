@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "../src/prefixes";
+@import "../dist/prefixes";
 
 .box-shadow {
     @include box-shadow(0 1px 4px rgba(0, 0, 0, .5));

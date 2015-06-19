@@ -1,0 +1,78 @@
+
+// Border
+
+// border-radius
+
+@mixin border-radius($radius: 4px) {    
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius: 4px) {    
+    -webkit-border-top-left-radius: $radius;
+       -moz-border-top-left-radius: $radius;
+        -ms-border-top-left-radius: $radius;
+         -o-border-top-left-radius: $radius;
+            border-top-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius: 4px) {    
+    -webkit-border-top-right-radius: $radius;
+       -moz-border-top-right-radius: $radius;
+        -ms-border-top-right-radius: $radius;
+         -o-border-top-right-radius: $radius;
+            border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius: 4px) {    
+    -webkit-border-bottom-left-radius: $radius;
+       -moz-border-bottom-left-radius: $radius;
+        -ms-border-bottom-left-radius: $radius;
+         -o-border-bottom-left-radius: $radius;
+            border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius: 4px) {    
+    -webkit-border-bottom-right-radius: $radius;
+       -moz-border-bottom-right-radius: $radius;
+        -ms-border-bottom-right-radius: $radius;
+         -o-border-bottom-right-radius: $radius;
+            border-bottom-right-radius: $radius;
+}
+
+// border-image
+
+@mixin border-image($value) {
+    -webkit-border-image: $value;   /* Safari 5, Chrome */
+       -moz-border-image: $value;   /* Firefox 3.5~15.0 */
+         -o-border-image: $value;   /* Opera */
+            border-image: $value;   /* Safari 6+, Chrome, New */
+}
+
+@mixin border-image-source($value) {
+    -webkit-border-image-source: $value;   /* Safari 5, Chrome */
+            border-image-source: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
+}
+
+@mixin border-image-slice($value) {
+    -webkit-border-image-slice: $value;   /* Safari 5, Chrome */
+            border-image-slice: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
+}
+
+@mixin border-image-width($value) {
+    -webkit-border-image-width: $value;   /* Safari 5, Chrome */
+            border-image-width: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
+}
+
+@mixin border-image-outset($value) {
+    -webkit-border-image-outset: $value;   /* Safari 5, Chrome */
+            border-image-outset: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
+}
+
+@mixin border-image-repeat($value) {
+    -webkit-border-image-repeat: $value;   /* Safari 5, Chrome */
+            border-image-repeat: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
+}

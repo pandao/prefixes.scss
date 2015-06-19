@@ -1,0 +1,14 @@
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+.mask {
+  -webkit-mask-image: url(images/hexagon.png);
+  /* Chrome, iOS, Safari */
+  mask-image: url(images/hexagon.png);
+  /* None yet / Non-standard */
+  -webkit-mask-size: cover;
+  /* Chrome, iOS, Safari */
+  mask-size: cover;
+  /* None yet / Non-standard */
+  -webkit-mask-repeat: no-repeat;
+  /* Chrome, iOS, Safari */
+  mask-repeat: no-repeat;
+  /* None yet / Non-standard */ }

@@ -1,0 +1,64 @@
+
+// Column
+
+@mixin column-count($value) {
+  -webkit-column-count: $value; /* Chrome, Safari, Android, Blackberry  */
+     -moz-column-count: $value; /* Firefox 34+ */
+          column-count: $value; /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-gap($value) {
+  -webkit-column-gap: $value;  /* Chrome, Safari, Android, Blackberry  */
+     -moz-column-gap: $value;  /* Firefox 34+ */
+          column-gap: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule($value) {
+    -webkit-column-rule: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule: $value;  /* Firefox 34+ */
+            column-rule: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule-color($value) {
+    -webkit-column-rule-color: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule-color: $value;  /* Firefox 34+ */
+            column-rule-color: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule-style($value) {
+    -webkit-column-rule-style: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule-style: $value;  /* Firefox 34+ */
+            column-rule-style: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-rule-width($value) {
+    -webkit-column-rule-width: $value;  /* Chrome, Safari, Android, Blackberry  */
+       -moz-column-rule-width: $value;  /* Firefox 34+ */
+            column-rule-width: $value;  /* IE 10+, Opera 11.1+, New */
+}
+
+@mixin column-fill($value) {
+ -webkit-column-fill: $value;  /* None yet */
+    -moz-column-fill: $value;  /* Firefox 13.0+ */
+         column-fill: $value;  /* None yet / Non-standard */
+}
+
+@mixin column-span($value) {
+    -webkit-column-span: $value;  /* Safari, Chrome, iOS 7.0+, Android, Opera 26+ */
+       -moz-column-span: $value;  /* Firefox 34+ */
+            column-span: $value;  /* IE10+, Opera Mini */
+}
+
+@mixin column-width($value) {
+    -webkit-column-width: $value; /* Safari, Chrome, iOS 7.0+, Android, Opera 26+ */
+       -moz-column-width: $value; /* Firefox */
+            column-width: $value; /* IE10+, Opera */
+}
+
+// columns: column-width column-count;
+
+@mixin columns($value) {
+    -webkit-columns: $value; /* Safari, Chrome, iOS 7.0+, Android, Opera 26+ */
+       -moz-columns: $value; /* Firefox */
+            columns: $value; /* IE10+, Opera */
+}

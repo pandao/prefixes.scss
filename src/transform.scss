@@ -1,0 +1,40 @@
+
+// Transform
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;  /* Safari, Chrome */
+       -moz-transform: $transform;  /* Firefox 3.5~16.0 */
+        -ms-transform: $transform;  /* IE9~10 */
+         -o-transform: $transform;  /* Opera 10.5~12.10 */
+            transform: $transform;
+}
+
+@mixin transform-origin($origin) {
+    -webkit-transform-origin: $origin;
+       -moz-transform-origin: $origin;  /* Firefox 3.5~16.0 */
+        -ms-transform-origin: $origin;  /* IE9~10 */
+         -o-transform-origin: $origin;  /* Opera 10.5~12.10 */
+            transform-origin: $origin;
+}
+
+@mixin transform-origin-x($origin) {
+    -webkit-transform-origin-x: $origin; /* Blink, Webkit */
+            transform-origin-x: $origin; /* IE11+ */
+}
+
+@mixin transform-origin-y($origin) {
+    -webkit-transform-origin-y: $origin; /* Blink, Webkit */
+            transform-origin-y: $origin; /* IE11+ */
+}
+
+@mixin transform-origin-z($origin) {
+    -webkit-transform-origin-z: $origin; /* Blink, Webkit */
+            transform-origin-z: $origin; /* IE11+ */
+}
+
+@mixin transform-style($style) {
+    -webkit-transform-style: $style;
+       -moz-transform-style: $style;  /* Firefox 10~16.0 */
+        -ms-transform-style: $style;  /* IE9~10 */
+            transform-style: $style;  /* Firefox, Blink, IE11+ */
+}

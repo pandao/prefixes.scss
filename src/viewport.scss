@@ -1,0 +1,28 @@
+
+// viewport
+
+@mixin viewport-device-width() {
+    width: device-width;
+    user-zoom: fixed;
+}
+
+@mixin viewport() {
+    @-webkit-viewport { 
+        @include viewport-device-width();
+    }
+    @-moz-viewport { 
+        @include viewport-device-width();
+    }
+    
+    @-ms-viewport { 
+        @include viewport-device-width();
+    }
+    
+    @-o-viewport { 
+        @include viewport-device-width();
+    }
+    
+    @viewport { 
+        @include viewport-device-width();
+    }
+}

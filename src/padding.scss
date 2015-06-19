@@ -1,0 +1,14 @@
+
+// padding
+
+@mixin padding-start($value) {
+    -webkit-padding-start: $value; /* Safari, Chrome, WebKit */
+       -moz-padding-start: $value; /* Firefox 3+ */
+            padding-start: $value;
+}
+
+@mixin padding-end($value) {
+    -webkit-padding-end: $value; /* Safari, Chrome, WebKit */
+       -moz-padding-end: $value; /* Firefox 3+ */
+            padding-end: $value;
+}

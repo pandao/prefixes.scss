@@ -1,0 +1,10 @@
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }

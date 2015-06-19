@@ -1,0 +1,57 @@
+
+// Mask
+
+@mixin mask-image($value) {
+    -webkit-mask-image: $value; /* Chrome, iOS, Safari */
+            mask-image: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-size($value) {
+    -webkit-mask-size: $value; /* Chrome, iOS, Safari */
+            mask-size: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-clip($value) {
+    -webkit-mask-clip: $value; /* Chrome, iOS, Safari */
+            mask-clip: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-position($value) {
+    -webkit-mask-position: $value; /* Chrome, iOS, Safari */
+            mask-position: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-position-x($value) {
+    -webkit-mask-position-x: $value; /* Chrome, iOS, Safari */
+            mask-position-x: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-position-y($value) {
+    -webkit-mask-position-y: $value; /* Chrome, iOS, Safari */
+            mask-position-y: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-origin($value) {
+    -webkit-mask-origin: $value; /* Chrome, iOS, Safari */
+            mask-origin: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-repeat($value) {
+    -webkit-mask-repeat: $value; /* Chrome, iOS, Safari */
+            mask-repeat: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-attachment($value) {
+    -webkit-mask-attachment: $value; /* Chrome, iOS, Safari */
+            mask-attachment: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-composite($value) {
+    -webkit-mask-composite: $value; /* Chrome, iOS, Safari */
+            mask-composite: $value; /* None yet / Non-standard */
+}
+
+@mixin mask-box-image($value) {
+    -webkit-mask-box-image: $value; /* Chrome, iOS, Safari */
+            mask-box-image: $value; /* None yet / Non-standard */
+}

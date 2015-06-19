@@ -1,0 +1,49 @@
+
+// Helper
+
+// clearfix
+
+@mixin clearfix() { 
+    &:before, &:after {
+        content: " ";
+        display: table;
+    } 
+    
+    &:after {
+        clear: both;
+    }
+} 
+
+// user-select
+
+@mixin user-select($type) {
+    -webkit-user-select: $type;
+       -moz-user-select: $type;
+        -ms-user-select: $type;
+         -o-user-select: $type;
+            user-select: $type;
+}
+
+// appearance
+
+@mixin appearance($value) {
+    -webkit-appearance: $value;
+       -moz-appearance: $value;
+        -ms-appearance: $value;
+            appearance: $value;
+}
+
+// opacity
+
+@mixin opacity($opacity) {
+    opacity: $opacity; /* W3C */
+     filter: alpha(opacity=($opacity * 100)); /* IE */
+}
+
+// ruby-position
+
+@mixin ruby-position($value) {
+    -webkit-ruby-position: $value; /* Blink, Webkit */
+            ruby-position: $value; /* Firefox, IE */
+}
+

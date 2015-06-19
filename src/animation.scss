@@ -1,0 +1,76 @@
+
+// Animations IE10+
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    } 
+    
+    @-moz-keyframes #{$name} {
+        @content;
+    } 
+    
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animation($animation...) {
+    -webkit-animation: $animation;
+       -moz-animation: $animation;  /* Firefox 5.0~16.0 */
+            animation: $animation;  /* IE10+ */
+}
+
+@mixin animation-name($name) {
+    -webkit-animation-name: $name;
+       -moz-animation-name: $name; /* Firefox 5.0~16.0 */
+            animation-name: $name;
+}
+
+@mixin animation-duration($time : 1s) {
+    -webkit-animation-duration: $time;
+       -moz-animation-duration: $time; /* Firefox 5.0~16.0 */
+            animation-duration: $time;
+}
+
+@mixin animation-timing-function($easing : ease) {
+    -webkit-animation-timing-function: $easing;
+       -moz-animation-timing-function: $easing; /* Firefox 5.0~16.0 */
+            animation-timing-function: $easing;
+}
+
+@mixin animation-delay($delay : 1s) {
+    -webkit-animation-delay: $delay;
+       -moz-animation-delay: $delay; /* Firefox 5.0~16.0 */
+            animation-delay: $delay;
+}
+
+@mixin animation-iteration-count($count : infinite) {
+    -webkit-animation-iteration-count: $count;
+       -moz-animation-iteration-count: $count; /* Firefox 5.0~16.0 */
+            animation-iteration-count: $count;
+}
+
+// normal or alternate
+@mixin animation-direction($direction : normal) {
+    -webkit-animation-direction: $direction;
+       -moz-animation-direction: $direction; /* Firefox 5.0~16.0 */
+            animation-direction: $direction;
+}
+
+// paused or running
+
+@mixin animation-play-state($state) {
+    -webkit-animation-play-state: $state;
+       -moz-animation-play-state: $state;    /* Firefox 5.0~16.0 */
+            animation-play-state: $state;
+}
+
+// animation-fill-mode
+
+@mixin animation-fill-mode($mode) {
+    -webkit-animation-fill-mode: $mode;
+       -moz-animation-fill-mode: $mode;
+            animation-fill-mode: $mode;
+}
+

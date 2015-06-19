@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import "../dist/prefixes";
+
+.display-flex {
+    @include display-flex();
+}
+
+.flexbox {
+    @include flexbox(); // alias display-flex()
+}
+
+.inline-flex {
+    @include inline-flex();
+}
+
+.inline-flexbox {
+    @include inline-flexbox(); // alias inline-flex();
+}
+
+.column-item {
+    @include flex(1);
+    @include flex-direction(column);
+    @include order(1);
+}
+
+.row-item {
+    @include flex(1);
+    @include flex-order(2);
+}
+
+.flex-inline {
+    @include flex-inline(2);
+}
+
+.nowarp {
+    @include flex-wrap();
+}
+
+.flex-flow {
+    @include flex-flow();
+}
+
+.flex-grow {
+    @include flex-grow();
+}
+
+.flex-basis {
+    @include flex-basis();
+}
+
+.flex-justify {
+    @include flex-justify();
+}
+
+.align-items {
+    @include align-items();
+}
+
+.align-self {
+    @include align-self();
+}
+
+.align-content {
+    @include align-content();
+}

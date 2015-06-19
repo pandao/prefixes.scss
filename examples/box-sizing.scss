@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "../src/prefixes";
+@import "../dist/prefixes";
 
 .border-box {
     @include box-sizing(border-box);

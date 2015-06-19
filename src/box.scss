@@ -1,0 +1,27 @@
+
+// Box
+
+// box-shadow
+
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;      /* Webkit browsers */
+       -moz-box-shadow: $value;      /* Firefox */
+        -ms-box-shadow: $value;      /* IE9 */
+         -o-box-shadow: $value;      /* Opera(Old) */
+            box-shadow: $value;      /* IE9+, News */
+}
+
+//box-sizing
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+       -moz-box-sizing: $value;
+            box-sizing: $value; 
+}
+
+// box-reflect
+
+@mixin box-reflect($value) {
+    -webkit-box-reflect: $value; /* Chrome, Safari, iOS, Blackberry */
+            box-reflect: $value; /* None yet / Non-standard */
+}

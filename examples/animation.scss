@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "../src/prefixes";
+@import "../dist/prefixes";
         
 [class*=animation-] { 
     @include animation-duration(0.5s); 

@@ -1,0 +1,23 @@
+
+// Input
+
+// input-placeholder
+
+@mixin input-placeholder($seletor) {
+    
+    #{$seletor}::-webkit-input-placeholder {
+        @content;
+    }
+    
+    #{$seletor}:-moz-placeholder {  /* Firefox 4~18 */
+        @content;
+    }
+    
+    #{$seletor}::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+    
+    #{$seletor}:-ms-input-placeholder {  /* IE10+ */ 
+        @content;
+    }
+}

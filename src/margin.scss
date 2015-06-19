@@ -1,0 +1,14 @@
+
+// margin
+
+@mixin margin-start($value) {
+    -webkit-margin-start: $value;  /* Safari 3.0+, Chrome */
+       -moz-margin-start: $value;  /* Firefox 1.0+ */
+            margin-start: $value;  /* None yet / Non-standard */
+}
+
+@mixin margin-end($value) {
+    -webkit-margin-end: $value;  /* Safari 3.0+, Chrome */
+       -moz-margin-end: $value;  /* Firefox 1.0+ */
+            margin-end: $value;  /* None yet / Non-standard */
+}

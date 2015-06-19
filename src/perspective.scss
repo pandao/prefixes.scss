@@ -1,0 +1,30 @@
+
+// perspective
+
+@mixin perspective($value) {
+    -webkit-perspective: $value;          /* Safari, Chrome */
+            perspective: $value;          /* None yet / Non-standard */
+}
+
+@mixin perspective-origin($value) {
+    -webkit-perspective-origin: $value;   /* Safari, Chrome 12+ */
+       -moz-perspective-origin: $value;   /* Firefox 10~16 */
+            perspective-origin: $value;   /* Opera 15+, IE10+ */
+}
+
+@mixin perspective-origin-x($value) {
+    -webkit-perspective-origin-x: $value;   /* Safari, Chrome 12+ */
+            perspective-origin-x: $value;   /* IE10+ */
+}
+
+@mixin perspective-origin-y($value) {
+    -webkit-perspective-origin-y: $value;   /* Safari, Chrome 12+ */
+            perspective-origin-y: $value;   /* IE10+ */
+}
+
+@mixin backface-visibility($value : hidden) {
+    -webkit-backface-visibility: $value;  /* Chrome, Safari, Opera 15+ */
+       -moz-backface-visibility: $value;  /* Firefox */
+        -ms-backface-visibility: $value;  /* IE10 */
+            backface-visibility: $value;
+}

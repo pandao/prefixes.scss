@@ -1,0 +1,30 @@
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+.example {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  /* Webkit browsers */
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  /* Firefox */
+  -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  /* IE9 */
+  -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  /* Opera(Old) */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  /* IE9+, News */
+  -webkit-background-size: cover;
+  /* Chrome, iOS, Safari */
+  -moz-background-size: cover;
+  /* Firefox 3.6~4.0 */
+  -o-background-size: cover;
+  /* Opera 9.5 */
+  background-size: cover;
+  /* IE9+, New */ }
+  .example:before, .example:after {
+    content: " ";
+    display: table; }
+  .example:after {
+    clear: both; }

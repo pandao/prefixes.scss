@@ -1,0 +1,17 @@
+
+// filter
+
+@mixin filter($value) {
+    -webkit-filter: $value;     /* Chrome 23+, Safari 6.0+, Blackberry 10.0+ */
+            filter: $value;     /* None yet */
+}
+
+// filter blur
+
+@mixin filter-blur($value : 10px, $ie-value : 10) { 
+            filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=#{$ie-value}, MakeShadow=false);  /* IE6~IE9 */
+    -webkit-filter: blur($value); /* Chrome, Opera, iOS, Safari */
+       -moz-filter: blur($value); /* Firefox(Old) */
+        -ms-filter: blur($value);
+            filter: blur($value);
+}

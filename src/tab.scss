@@ -1,0 +1,10 @@
+
+// tab
+
+@mixin tab-size($value) {
+    -webkit-tab-size: $value; /* Chrome 21+, Safari 6.1+ */
+       -moz-tab-size: $value; /* Firefox 4.0 */
+         -o-tab-size: $value; /* Opera 10.6~15 */
+            tab-size: $value; /* Blink & Webkit */
+}
+

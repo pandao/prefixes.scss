@@ -1,0 +1,68 @@
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+[class*=animation-] {
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  /* Firefox 5.0~16.0 */
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  /* Firefox 5.0~16.0 */
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.animation-fade-in {
+  -webkit-animation-name: fade-in;
+  -moz-animation-name: fade-in;
+  /* Firefox 5.0~16.0 */
+  animation-name: fade-in; }
+
+.animation-fade-out {
+  -webkit-animation-name: fade-out;
+  -moz-animation-name: fade-out;
+  /* Firefox 5.0~16.0 */
+  animation-name: fade-out; }
+
+.logo-fade-in {
+  -webkit-animation: fade-in 1s ease-out;
+  -moz-animation: fade-in 1s ease-out;
+  /* Firefox 5.0~16.0 */
+  animation: fade-in 1s ease-out;
+  /* IE10+ */ }

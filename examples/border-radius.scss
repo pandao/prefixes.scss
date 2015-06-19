@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "../src/prefixes";
+@import "../dist/prefixes";
 
 .radius {
     @include border-radius(4px);

@@ -1,6 +1,6 @@
 # Prefixes.scss
 
-CSS(3) prefixes mixins library for Sass/Scss. Free installation, custom you need css prefixes.
+CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes.
 
 #### Install
 

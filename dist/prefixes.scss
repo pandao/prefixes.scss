@@ -1,182 +1,6 @@
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+
 @charset "UTF-8";
-
-/*!
- * prefixes.scss
- * @author    Pandao
- * @version   0.1.0
- * @homePage  https://github.com/pandao/prefixes.scss
- * @license   MIT
- * @copyright Copyright (c) 2015
- */
-
-// appearance
-
-@mixin appearance($value) {
-    -webkit-appearance: $value;
-       -moz-appearance: $value;
-        -ms-appearance: $value;
-            appearance: $value;
-}
-
-// clearfix
-
-@mixin clearfix() { 
-    &:before, &:after {
-        content: " ";
-        display: table;
-    } 
-    
-    &:after {
-        clear: both;
-    }
-}
-
-// viewport
-
-@mixin viewport-device-width() {
-    width: device-width;
-    user-zoom: fixed;
-}
-
-@mixin viewport() {
-    @-webkit-viewport { 
-        @include viewport-device-width();
-    }
-    @-moz-viewport { 
-        @include viewport-device-width();
-    }
-    
-    @-ms-viewport { 
-        @include viewport-device-width();
-    }
-    
-    @-o-viewport { 
-        @include viewport-device-width();
-    }
-    
-    @viewport { 
-        @include viewport-device-width();
-    }
-}
-
-// Transform
-
-@mixin transform($transform) {
-    -webkit-transform: $transform;  /* Safari, Chrome */
-       -moz-transform: $transform;  /* Firefox 3.5~16.0 */
-        -ms-transform: $transform;  /* IE9~10 */
-         -o-transform: $transform;  /* Opera 10.5~12.10 */
-            transform: $transform;
-}
-
-@mixin transform-origin($origin) {
-    -webkit-transform-origin: $origin;
-       -moz-transform-origin: $origin;  /* Firefox 3.5~16.0 */
-        -ms-transform-origin: $origin;  /* IE9~10 */
-         -o-transform-origin: $origin;  /* Opera 10.5~12.10 */
-            transform-origin: $origin;
-}
-
-@mixin transform-origin-x($origin) {
-    -webkit-transform-origin-x: $origin; /* Blink, Webkit */
-            transform-origin-x: $origin; /* IE11+ */
-}
-
-@mixin transform-origin-y($origin) {
-    -webkit-transform-origin-y: $origin; /* Blink, Webkit */
-            transform-origin-y: $origin; /* IE11+ */
-}
-
-@mixin transform-origin-z($origin) {
-    -webkit-transform-origin-z: $origin; /* Blink, Webkit */
-            transform-origin-z: $origin; /* IE11+ */
-}
-
-@mixin transform-style($style) {
-    -webkit-transform-style: $style;
-       -moz-transform-style: $style;  /* Firefox 10~16.0 */
-        -ms-transform-style: $style;  /* IE9~10 */
-            transform-style: $style;  /* Firefox, Blink, IE11+ */
-}
-
-// perspective
-
-@mixin perspective($value) {
-    -webkit-perspective: $value;          /* Safari, Chrome */
-            perspective: $value;          /* None yet / Non-standard */
-}
-
-@mixin perspective-origin($value) {
-    -webkit-perspective-origin: $value;   /* Safari, Chrome 12+ */
-       -moz-perspective-origin: $value;   /* Firefox 10~16 */
-            perspective-origin: $value;   /* Opera 15+, IE10+ */
-}
-
-@mixin perspective-origin-x($value) {
-    -webkit-perspective-origin-x: $value;   /* Safari, Chrome 12+ */
-            perspective-origin-x: $value;   /* IE10+ */
-}
-
-@mixin perspective-origin-y($value) {
-    -webkit-perspective-origin-y: $value;   /* Safari, Chrome 12+ */
-            perspective-origin-y: $value;   /* IE10+ */
-}
-
-@mixin backface-visibility($value : hidden) {
-    -webkit-backface-visibility: $value;  /* Chrome, Safari, Opera 15+ */
-       -moz-backface-visibility: $value;  /* Firefox */
-        -ms-backface-visibility: $value;  /* IE10 */
-            backface-visibility: $value;
-}
-
-// Transitions IE10+
-
-@mixin transition($transition...) {
-    -webkit-transition: $transition;  /* Safari, Chrome */
-       -moz-transition: $transition;  /* Firefox 4.0~16.0 */
-            transition: $transition;  /* IE >9, FF >15, Opera >12.0 */
-}
-
-@mixin transition-property($property) {
-    -webkit-transition-property: $property;
-       -moz-transition-property: $property;  /* Firefox 4.0~16.0 */
-            transition-property: $property;
-}
-
-@mixin transition-duration($duration) {
-    -webkit-transition-duration: $duration;
-       -moz-transition-duration: $duration;  /* Firefox 4.0~16.0 */
-            transition-duration: $duration;
-}
-
-@mixin transition-timing-function($easing) {
-    -webkit-transition-timing-function: $easing;
-       -moz-transition-timing-function: $easing;  /* Firefox 4.0~16.0 */
-            transition-timing-function: $easing;
-}
-
-@mixin transition-delay($delay) {
-    -webkit-transition-delay: $delay;
-       -moz-transition-delay: $delay;  /* Firefox 4.0~16.0 */
-            transition-delay: $delay;
-}
-
-// Flex align
-
-@mixin align-content($value) {
-    -webkit-align-content: $value;  /* Chrome 21.0+, Safari Not supported. */
-            align-content: $value;  /* Firefox 28+, Opera 12.10, IE Not supported. */
-}
-
-@mixin align-items($value) {
-    -webkit-align-items: $value; /* Safari 7.0+, Chrome 21.0+ */
-            align-items: $value; /* Firefox 20.0+, IE11+, Opera 12.10 */
-}
-
-@mixin align-self($value) {
-    -webkit-align-self: $value; /* Chrome 21~36, Safari Not supported. */
-            align-self: $value; /* Firefox 28+, Opera 12.10, IE Not supported. */
-}
 
 // Animations IE10+
 
@@ -253,15 +77,41 @@
             animation-fill-mode: $mode;
 }
 
-// user-select
 
-@mixin user-select($type) {
-    -webkit-user-select: $type;
-       -moz-user-select: $type;
-        -ms-user-select: $type;
-         -o-user-select: $type;
-            user-select: $type;
+
+// background  
+
+// gradient
+
+@mixin linear-gradient($start-color, $end-color, $position : top, $perStart : 0%, $perEnd : 100%) {
+    background: -webkit-linear-gradient($position, $start-color, $end-color);        /* Webkit browsers */
+    background: -moz-linear-gradient( $position, $start-color, $end-color);          /* Firefox(old) */
+    background: -o-linear-gradient( $position, $start-color, $end-color);             /* Opera(old) */
+    background: -ms-linear-gradient( $position, $start-color $perStart, $end-color $perEnd);    /* IE10 */ 
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, start-colorstr=#{$start-color}, end-colorstr=#{$end-color});    /* IE9 */
+     ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, start-colorstr=#{$start-color}, end-colorstr=#{$end-color})";  /* IE8 */ 
+    background: linear-gradient( $position, $start-color $perStart, $end-color $perEnd);        /* W3C */
 }
+
+@mixin background-clip($value) {
+    -webkit-background-clip: $value;
+            background-clip: $value;  /* Firefox 4.0, IE9+, Opera 10.5+, Chrome, Safari 3.0+ */
+}
+
+@mixin background-origin($value) {
+    -webkit-background-origin: $value; 
+            background-origin: $value;  /* IE9+, Other */
+}
+
+@mixin background-size($value) {
+    -webkit-background-size: $value;  /* Chrome, iOS, Safari */
+       -moz-background-size: $value;  /* Firefox 3.6~4.0 */
+         -o-background-size: $value;  /* Opera 9.5 */
+            background-size: $value;  /* IE9+, New */
+}
+
+
+// Border
 
 // border-radius
 
@@ -339,6 +189,9 @@
             border-image-repeat: $value;   /* Safari 6+, Chrome, IE11+, Opera 15+ */
 }
 
+
+// Box
+
 // box-shadow
 
 @mixin box-shadow($value) {
@@ -364,34 +217,16 @@
             box-reflect: $value; /* None yet / Non-standard */
 }
 
-// background  
 
-@mixin linear-gradient($start-color, $end-color, $position : top, $perStart : 0%, $perEnd : 100%) {
-    background: -webkit-linear-gradient($position, $start-color, $end-color);        /* Webkit browsers */
-    background: -moz-linear-gradient( $position, $start-color, $end-color);          /* Firefox(old) */
-    background: -o-linear-gradient( $position, $start-color, $end-color);             /* Opera(old) */
-    background: -ms-linear-gradient( $position, $start-color $perStart, $end-color $perEnd);    /* IE10 */ 
-        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, start-colorstr=#{$start-color}, end-colorstr=#{$end-color});    /* IE9 */
-     ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, start-colorstr=#{$start-color}, end-colorstr=#{$end-color})";  /* IE8 */ 
-    background: linear-gradient( $position, $start-color $perStart, $end-color $perEnd);        /* W3C */
+// Clip
+
+// clip-path
+
+@mixin clip-path($value) {
+    -webkit-clip-path: $value; /* Chrome, iOS, Safari */
+            clip-path: $value;
 }
 
-@mixin background-clip($value) {
-    -webkit-background-clip: $value;
-            background-clip: $value;  /* Firefox 4.0, IE9+, Opera 10.5+, Chrome, Safari 3.0+ */
-}
-
-@mixin background-origin($value) {
-    -webkit-background-origin: $value; 
-            background-origin: $value;  /* IE9+, Other */
-}
-
-@mixin background-size($value) {
-    -webkit-background-size: $value;  /* Chrome, iOS, Safari */
-       -moz-background-size: $value;  /* Firefox 3.6~4.0 */
-         -o-background-size: $value;  /* Opera 9.5 */
-            background-size: $value;  /* IE9+, New */
-}
 
 // Column
 
@@ -457,88 +292,15 @@
             columns: $value; /* IE10+, Opera */
 }
 
-// clip-path
 
-@mixin clip-path($value) {
-    -webkit-clip-path: $value; /* Chrome, iOS, Safari */
-            clip-path: $value;
-}
-
-// display
+// Display
 
 @mixin display-grid() {
     display: -ms-grid;     /* IE 10 */
     display:     grid;     /* None yet */
 }
 
-@mixin display-flex() {
-    display: -webkit-box;  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* New - Safari 6.1+. iOS 7.1+, Blackberry 10 */
-    display: flex;         /* New, Spec - Firefox, Chrome, Opera */
-}
 
-@mixin inline-flex($value) {
-    -webkit-inline-flex: $value; /* Chrome 21.0+ */
-            inline-flex: $value; /* Firefox 20+, Opera 12.5 */
-}
-
-@mixin flex($value) {
-    -webkit-box-flex: $value;   /* Old - iOS 6-, Safari 3.1~6 */
-        -webkit-flex: $value;   /* Safari 6.1+. iOS 7.1+, Blackberry 10 */
-            -ms-flex: $value;   /* IE 10 */
-                flex: $value;   /* New, Spec - Firefox, Chrome, Opera */
-}
-
-@mixin flex-direction($value) {
-    -webkit-flex-direction: $value;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
-            flex-direction: $value;  /* Firefox 28+, IE11, Opera 12.10 */
-}
-
-@mixin flex-basis($value) {
-    -webkit-flex-basis: $value;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
-            flex-basis: $value;  /* Firefox 22+, IE11, Opera 12.10 */
-}
-
-@mixin flex-flow($value) {
-    -webkit-flex-flow: $value;   /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
-            flex-flow: $value;   /* Firefox 28+, IE11, Opera 12.10 */
-}
-
-@mixin flex-grow($value) {
-    -webkit-flex-grow: $value;   /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
-            flex-grow: $value;   /* Firefox 20+, Opera 12.10, IE Not supported. */
-}
-
-@mixin flex-shrink($value) {
-    -webkit-flex-shrink: $value; /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
-            flex-shrink: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
-}
-
-@mixin flex-wrap($value) {
-    -webkit-flex-wrap: $value;  /* Safari 6.1+, Chrome 21.0+, Android 4.4+, iOS 7.0+ */
-            flex-wrap: $value;  /* Firefox 28+, IE11, Opera 12.10 */
-}
-
-@mixin order($value) {
-     -webkit-order: $value; /* Chrome 21+, Safari Not supported. */
-    -ms-flex-order: $value; /* IE 10.0 */
-             order: $value; /* Firefox 20+, Opera 12.10 */
-}
-
-// flow
-
-@mixin flow-into($value) {
-    -webkit-flow-into: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
-        -ms-flow-into: $value;  /* IE10+ */
-            flow-into: $value;  /* None yet */
-}
-
-@mixin flow-from($value) {
-    -webkit-flow-from: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
-        -ms-flow-from: $value;  /* IE10+ */
-            flow-from: $value;  /* None yet */
-}
 
 // filter
 
@@ -556,6 +318,228 @@
         -ms-filter: blur($value);
             filter: blur($value);
 }
+
+
+// Flexbox
+
+@mixin display-flex() {
+    display: -webkit-box;  /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* New - Safari 6.1+. iOS 7.1+, Blackberry 10 */
+	display: -moz-flex;
+    display: flex;         /* New, Spec - Firefox, Chrome, Opera */
+}
+
+// alias display-flex()
+
+@mixin flexbox() {
+    @include display-flex();
+}
+
+@mixin inline-flex() {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: -moz-inline-flex;
+	display: inline-flex;
+}
+
+// alias inline-flex()
+
+@mixin inline-flexbox() {
+    @include inline-flex();
+}
+
+@mixin flex-inline($value) {
+    -webkit-inline-flex: $value; /* Chrome 21.0+ */
+       -moz-inline-flex: $value;
+        -ms-inline-flex: $value;
+            inline-flex: $value; /* Firefox 20+, Opera 12.5 */
+}
+
+@mixin flex($value : 1) {
+    -webkit-box-flex: $value;   /* Old - iOS 6-, Safari 3.1~6 */
+	   -moz-box-flex: $value;
+        -webkit-flex: $value;   /* Safari 6.1+. iOS 7.1+, Blackberry 10 */
+           -moz-flex: $value;
+            -ms-flex: $value;   /* IE 10 */
+                flex: $value;   /* New, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin flex-direction($value: row) {
+	@if $value == row-reverse {
+		-webkit-box-direction: reverse;
+		   -webkit-box-orient: horizontal;
+	} @else if $value == column {
+		-webkit-box-direction: normal;
+		   -webkit-box-orient: vertical;
+	} @else if $value == column-reverse {
+		-webkit-box-direction: reverse;
+		   -webkit-box-orient: vertical;
+	} @else {
+		-webkit-box-direction: normal;
+		   -webkit-box-orient: horizontal;
+	}
+
+	-webkit-flex-direction: $value; /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+	   -moz-flex-direction: $value;
+	    -ms-flex-direction: $value;
+	        flex-direction: $value;  /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin flex-basis($value : auto) {
+         -webkit-flex-basis: $value;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+	-ms-flex-preferred-size: $value;
+	        -moz-flex-basis: $value;
+                 flex-basis: $value;  /* Firefox 22+, IE11, Opera 12.10 */
+}
+
+@mixin flex-flow($values: (row nowrap)) {
+	-webkit-flex-flow: $values;  /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+	   -moz-flex-flow: $values;
+        -ms-flex-flow: $values;
+	        flex-flow: $values;  /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin flex-grow($value : 0) {
+     -webkit-box-flex: $value;
+    -webkit-flex-grow: $value;   /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+    -ms-flex-positive: $value;
+       -moz-flex-grow: $value;
+            flex-grow: $value;   /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+@mixin flex-shrink($value) {
+    -webkit-flex-shrink: $value; /* Chrome 21.0+, But Safari & Android & iOS Not supported. */
+       -moz-flex-shrink: $value;
+            flex-shrink: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+@mixin flex-wrap($value: nowrap) {
+	-webkit-flex-wrap: $value;  /* Safari 6.1+, Chrome 21.0+, Android 4.4+, iOS 7.0+ */
+	   -moz-flex-wrap: $value;
+
+	@if $value == nowrap {
+		-ms-flex-wrap: none;
+	} @else { 
+		-ms-flex-wrap: $value; 
+	}
+
+	        flex-wrap: $value; /* Firefox 28+, IE11, Opera 12.10 */
+}
+
+@mixin order($value : 1) {
+	-webkit-box-ordinal-group: $value + 1;
+                -webkit-order: $value; /* Chrome 21+, Safari Not supported. */
+               -ms-flex-order: $value; /* IE 10.0 */
+	               -moz-order: $value;
+                        order: $value; /* Firefox 20+, Opera 12.10 */
+}
+
+// alias order()
+
+@mixin flex-order($args...) {
+    @include order($args...); 
+}
+
+// flow
+
+@mixin flow-into($value) {
+    -webkit-flow-into: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
+       -moz-flow-into: $value;
+        -ms-flow-into: $value;  /* IE10+ */
+            flow-into: $value;  /* None yet */
+}
+
+@mixin flow-from($value) {
+    -webkit-flow-from: $value;  /* Safari 7.1+, iOS Safari 7.1+ */
+       -moz-flow-from: $value;
+        -ms-flow-from: $value;  /* IE10+ */
+            flow-from: $value;  /* None yet */
+}
+
+// Flex align
+
+// Values: flex-start | flex-end | center | space-between | space-around | stretch
+
+@mixin align-content($value: stretch) {
+	 -webkit-align-content: $value;  /* Chrome 21.0+, Safari Not supported. */
+	    -moz-align-content: $value;
+
+	@if $value == flex-start {
+		-ms-flex-line-pack: start;
+	} @else if $value == flex-end {
+		-ms-flex-line-pack: end;
+	} @else {
+		-ms-flex-line-pack: $value;
+	}
+
+	         align-content: $value;  /* Firefox 28+, Opera 12.10, IE Not supported. */
+}
+
+@mixin align-items($value: stretch) {
+	@if $value == flex-start {
+		-webkit-box-align: start;
+		   -ms-flex-align: start;
+	} @else if $value == flex-end {
+		-webkit-box-align: end;
+		   -ms-flex-align: end;
+	} @else {
+		-webkit-box-align: $value;
+		   -ms-flex-align: $value;
+	}
+
+	-webkit-align-items: $value; /* Safari 7.0+, Chrome 21.0+ */
+	   -moz-align-items: $value;
+	        align-items: $value; /* Firefox 20.0+, IE11+, Opera 12.10 */
+}
+
+// Values: auto | flex-start | flex-end | center | baseline | stretch
+
+@mixin align-self($value: auto) {
+	-webkit-align-self: $value;  /* Chrome 21~36, Safari Not supported. */
+	   -moz-align-self: $value;
+
+	@if $value == flex-start {
+		-ms-flex-item-align: start;
+	} @else if $value == flex-end {
+		-ms-flex-item-align: end;
+	} @else {
+		-ms-flex-item-align: $value;
+	}
+
+	align-self: $value;    /* Firefox 28+, Opera 12.10, IE Not supported. */
+}
+
+@mixin justify-content($value : flex-start) {
+	@if $value == flex-start {
+		-webkit-box-pack: start;
+		   -ms-flex-pack: start;
+	} @else if $value == flex-end {
+		-webkit-box-pack: end;
+		   -ms-flex-pack: end;
+	} @else if $value == space-around {
+		   -ms-flex-pack: distribute;
+	} @else if $value == space-between {
+		-webkit-box-pack: justify;
+		   -ms-flex-pack: justify;	
+	} @else {
+        -webkit-box-pack: $value;
+		   -ms-flex-pack: $value;
+	}
+
+    -webkit-justify-content: $value; /* Chrome 21+, Safari Not supported. */
+       -moz-justify-content: $value; /* Chrome 21+, Safari Not supported. */
+            justify-content: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
+}
+
+// alias justify-content
+
+@mixin flex-justify($args...) {
+    @include justify-content($args...);
+}
+
+// Font
 
 @mixin font-kerning($value) {
     -webkit-font-kerning: $value;
@@ -575,27 +559,80 @@
             font-variant-ligatures: $value;
 }
 
-// hyphens
 
-@mixin hyphens($value : auto) {
-    // Chrome 29- and Android 4.0 Browser support "-webkit-hyphens: none", but not the "auto" property.
-    -webkit-hyphens: $value;  /* Safari 5.1+, Chrome */
-       -moz-hyphens: $value;  /* Firefox 6.0+ */
-        -ms-hyphens: $value;  /* IE 10+ */
-            hyphens: $value;  /* None yet */
+// Helper
+
+// clearfix
+
+@mixin clearfix() { 
+    &:before, &:after {
+        content: " ";
+        display: table;
+    } 
+    
+    &:after {
+        clear: both;
+    }
+} 
+
+// user-select
+
+@mixin user-select($type) {
+    -webkit-user-select: $type;
+       -moz-user-select: $type;
+        -ms-user-select: $type;
+         -o-user-select: $type;
+            user-select: $type;
 }
 
-@mixin justify-content($value) {
-    -webkit-justify-content: $value; /* Chrome 21+, Safari Not supported. */
-            justify-content: $value; /* Firefox 20+, Opera 12.10, IE Not supported. */
+// appearance
+
+@mixin appearance($value) {
+    -webkit-appearance: $value;
+       -moz-appearance: $value;
+        -ms-appearance: $value;
+            appearance: $value;
 }
 
-// line
+// opacity
 
-@mixin line-break($value) {
-    -webkit-line-break: $value;
-            line-break: $value;
+@mixin opacity($opacity) {
+    opacity: $opacity; /* W3C */
+     filter: alpha(opacity=($opacity * 100)); /* IE */
 }
+
+// ruby-position
+
+@mixin ruby-position($value) {
+    -webkit-ruby-position: $value; /* Blink, Webkit */
+            ruby-position: $value; /* Firefox, IE */
+}
+
+
+
+// Input
+
+// input-placeholder
+
+@mixin input-placeholder($seletor) {
+    
+    #{$seletor}::-webkit-input-placeholder {
+        @content;
+    }
+    
+    #{$seletor}:-moz-placeholder {  /* Firefox 4~18 */
+        @content;
+    }
+    
+    #{$seletor}::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+    
+    #{$seletor}:-ms-input-placeholder {  /* IE10+ */ 
+        @content;
+    }
+}
+
 
 // margin
 
@@ -611,7 +648,8 @@
             margin-end: $value;  /* None yet / Non-standard */
 }
 
-// mask
+
+// Mask
 
 @mixin mask-image($value) {
     -webkit-mask-image: $value; /* Chrome, iOS, Safari */
@@ -668,13 +706,6 @@
             mask-box-image: $value; /* None yet / Non-standard */
 }
 
-// opacity
-
-@mixin opacity($opacity) {
-    opacity: $opacity; /* W3C */
-     filter: alpha(opacity=($opacity * 100)); /* IE */
-}
-
 // padding
 
 @mixin padding-start($value) {
@@ -689,12 +720,47 @@
             padding-end: $value;
 }
 
-// ruby-position
 
-@mixin ruby-position($value) {
-    -webkit-ruby-position: $value; /* Blink, Webkit */
-            ruby-position: $value; /* Firefox, IE */
+// perspective
+
+@mixin perspective($value) {
+    -webkit-perspective: $value;          /* Safari, Chrome */
+            perspective: $value;          /* None yet / Non-standard */
 }
+
+@mixin perspective-origin($value) {
+    -webkit-perspective-origin: $value;   /* Safari, Chrome 12+ */
+       -moz-perspective-origin: $value;   /* Firefox 10~16 */
+            perspective-origin: $value;   /* Opera 15+, IE10+ */
+}
+
+@mixin perspective-origin-x($value) {
+    -webkit-perspective-origin-x: $value;   /* Safari, Chrome 12+ */
+            perspective-origin-x: $value;   /* IE10+ */
+}
+
+@mixin perspective-origin-y($value) {
+    -webkit-perspective-origin-y: $value;   /* Safari, Chrome 12+ */
+            perspective-origin-y: $value;   /* IE10+ */
+}
+
+@mixin backface-visibility($value : hidden) {
+    -webkit-backface-visibility: $value;  /* Chrome, Safari, Opera 15+ */
+       -moz-backface-visibility: $value;  /* Firefox */
+        -ms-backface-visibility: $value;  /* IE10 */
+            backface-visibility: $value;
+}
+
+// tab
+
+@mixin tab-size($value) {
+    -webkit-tab-size: $value; /* Chrome 21+, Safari 6.1+ */
+       -moz-tab-size: $value; /* Firefox 4.0 */
+         -o-tab-size: $value; /* Opera 10.6~15 */
+            tab-size: $value; /* Blink & Webkit */
+}
+
+
 
 // Text
 
@@ -760,32 +826,133 @@
             text-emphasis-position: $value; /* WebKit */
 }
 
-// tab
+// Word
 
-@mixin tab-size($value) {
-    -webkit-tab-size: $value; /* Chrome 21+, Safari 6.1+ */
-       -moz-tab-size: $value; /* Firefox 4.0 */
-         -o-tab-size: $value; /* Opera 10.6~15 */
-            tab-size: $value; /* Blink & Webkit */
+@mixin word-break() {
+    -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
 }
 
-// input-placeholder
+// hyphens : none | manual | auto
+// iOS 4.2+
 
-@mixin input-placeholder($seletor) {
-    
-    #{$seletor}::-webkit-input-placeholder {
-        @content;
+@mixin hyphens($value : auto) {
+    // Chrome 29- and Android 4.0 Browser support "-webkit-hyphens: none", but not the "auto" property.
+    -webkit-hyphens: $value;  /* Safari 5.1+, Chrome */
+       -moz-hyphens: $value;  /* Firefox 6.0+ */
+        -ms-hyphens: $value;  /* IE 10+ */
+            hyphens: $value;  /* None yet */
+}
+
+// line
+// 指定用于中文、日语和韩语 (CJK) 文本的换行规则的严格程度
+
+@mixin line-break($value) {
+    -webkit-line-break: $value;
+            line-break: $value;
+}
+
+
+// Transform
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;  /* Safari, Chrome */
+       -moz-transform: $transform;  /* Firefox 3.5~16.0 */
+        -ms-transform: $transform;  /* IE9~10 */
+         -o-transform: $transform;  /* Opera 10.5~12.10 */
+            transform: $transform;
+}
+
+@mixin transform-origin($origin) {
+    -webkit-transform-origin: $origin;
+       -moz-transform-origin: $origin;  /* Firefox 3.5~16.0 */
+        -ms-transform-origin: $origin;  /* IE9~10 */
+         -o-transform-origin: $origin;  /* Opera 10.5~12.10 */
+            transform-origin: $origin;
+}
+
+@mixin transform-origin-x($origin) {
+    -webkit-transform-origin-x: $origin; /* Blink, Webkit */
+            transform-origin-x: $origin; /* IE11+ */
+}
+
+@mixin transform-origin-y($origin) {
+    -webkit-transform-origin-y: $origin; /* Blink, Webkit */
+            transform-origin-y: $origin; /* IE11+ */
+}
+
+@mixin transform-origin-z($origin) {
+    -webkit-transform-origin-z: $origin; /* Blink, Webkit */
+            transform-origin-z: $origin; /* IE11+ */
+}
+
+@mixin transform-style($style) {
+    -webkit-transform-style: $style;
+       -moz-transform-style: $style;  /* Firefox 10~16.0 */
+        -ms-transform-style: $style;  /* IE9~10 */
+            transform-style: $style;  /* Firefox, Blink, IE11+ */
+}
+
+
+// Transitions
+// IE10+
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;  /* Safari, Chrome */
+       -moz-transition: $transition;  /* Firefox 4.0~16.0 */
+            transition: $transition;  /* IE >9, FF >15, Opera >12.0 */
+}
+
+@mixin transition-property($property) {
+    -webkit-transition-property: $property;
+       -moz-transition-property: $property;  /* Firefox 4.0~16.0 */
+            transition-property: $property;
+}
+
+@mixin transition-duration($duration) {
+    -webkit-transition-duration: $duration;
+       -moz-transition-duration: $duration;  /* Firefox 4.0~16.0 */
+            transition-duration: $duration;
+}
+
+@mixin transition-timing-function($easing) {
+    -webkit-transition-timing-function: $easing;
+       -moz-transition-timing-function: $easing;  /* Firefox 4.0~16.0 */
+            transition-timing-function: $easing;
+}
+
+@mixin transition-delay($delay) {
+    -webkit-transition-delay: $delay;
+       -moz-transition-delay: $delay;  /* Firefox 4.0~16.0 */
+            transition-delay: $delay;
+}
+
+
+// viewport
+
+@mixin viewport-device-width() {
+    width: device-width;
+    user-zoom: fixed;
+}
+
+@mixin viewport() {
+    @-webkit-viewport { 
+        @include viewport-device-width();
+    }
+    @-moz-viewport { 
+        @include viewport-device-width();
     }
     
-    #{$seletor}:-moz-placeholder {  /* Firefox 4~18 */
-        @content;
+    @-ms-viewport { 
+        @include viewport-device-width();
     }
     
-    #{$seletor}::-moz-placeholder {  /* Firefox 19+ */
-        @content;
+    @-o-viewport { 
+        @include viewport-device-width();
     }
     
-    #{$seletor}:-ms-input-placeholder {  /* IE10+ */ 
-        @content;
+    @viewport { 
+        @include viewport-device-width();
     }
 }

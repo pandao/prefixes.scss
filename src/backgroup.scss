@@ -1,0 +1,31 @@
+
+// background  
+
+// gradient
+
+@mixin linear-gradient($start-color, $end-color, $position : top, $perStart : 0%, $perEnd : 100%) {
+    background: -webkit-linear-gradient($position, $start-color, $end-color);        /* Webkit browsers */
+    background: -moz-linear-gradient( $position, $start-color, $end-color);          /* Firefox(old) */
+    background: -o-linear-gradient( $position, $start-color, $end-color);             /* Opera(old) */
+    background: -ms-linear-gradient( $position, $start-color $perStart, $end-color $perEnd);    /* IE10 */ 
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, start-colorstr=#{$start-color}, end-colorstr=#{$end-color});    /* IE9 */
+     ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, start-colorstr=#{$start-color}, end-colorstr=#{$end-color})";  /* IE8 */ 
+    background: linear-gradient( $position, $start-color $perStart, $end-color $perEnd);        /* W3C */
+}
+
+@mixin background-clip($value) {
+    -webkit-background-clip: $value;
+            background-clip: $value;  /* Firefox 4.0, IE9+, Opera 10.5+, Chrome, Safari 3.0+ */
+}
+
+@mixin background-origin($value) {
+    -webkit-background-origin: $value; 
+            background-origin: $value;  /* IE9+, Other */
+}
+
+@mixin background-size($value) {
+    -webkit-background-size: $value;  /* Chrome, iOS, Safari */
+       -moz-background-size: $value;  /* Firefox 3.6~4.0 */
+         -o-background-size: $value;  /* Opera 9.5 */
+            background-size: $value;  /* IE9+, New */
+}
