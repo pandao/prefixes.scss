@@ -1,4 +1,4 @@
-/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2018-05-23 */
 .display-flex {
   display: -webkit-box;
   /* Old - iOS 6-, Safari 3.1~6, Blackberry 7 */
