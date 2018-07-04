@@ -80,4 +80,4 @@ Download :
 
 The [MIT](https://github.com/pandao/prefixes.scss/blob/master/LICENSE) license.
 
-Copyright (c) 2015 Pandao
+Copyright (c) 2015 - 2018 Pandao
