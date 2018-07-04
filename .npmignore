@@ -1,3 +1,9 @@
+npm-debug.log
+.git
+src/
+examples/
+Gulpfile.js
+bower.json
 .idea/
 .sass-cache/
 node_modules/
@@ -6,7 +12,6 @@ demo/
 research/
 test/
 tests/
-examples/*.map
 *.bat
 *.sh
 .project

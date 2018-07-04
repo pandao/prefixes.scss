@@ -4,6 +4,10 @@ CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes.
 
 #### Install
 
+NPM install:
+
+    bower install prefixes.scss --save-dev
+
 Bower install :
 
 	bower install prefixes.scss
