@@ -1,14 +1,14 @@
 "use strict";
 
-var gulp         = require("gulp");
-var gutil        = require("gulp-util");
-var sass         = require("gulp-sass");
-var rename       = require("gulp-rename");
-var notify       = require("gulp-notify");
+var gulp         = require('gulp');
+var gutil        = require('gulp-util');
+var sass         = require('gulp-sass');
+var rename       = require('gulp-rename');
+var notify       = require('gulp-notify');
 var header       = require('gulp-header');
-var concat       = require("gulp-concat");
-var dateFormat   = require("dateformatter").format;
-var pkg          = require("./package.json");
+var concat       = require('gulp-concat');
+var dateFormat   = require('dateformatter').format;
+var pkg          = require('./package.json');
 
 pkg.name         = "Prefixes.scss";
 pkg.today        = dateFormat;
