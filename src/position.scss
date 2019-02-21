@@ -1,0 +1,6 @@
+// Position
+
+@mixin position-sticky() {
+	position: -webkit-sticky;
+	position: sticky;
+}

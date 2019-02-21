@@ -1,4 +1,4 @@
-/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2015-06-19 */
+/*! Prefixes.scss v0.2.0 | CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes. | Author: Pandao | Copyright (c) 2015 Pandao, MIT License | https://github.com/pandao/prefixes.scss | 2019-02-21 */
 
 @charset "UTF-8";
 
@@ -749,6 +749,12 @@
        -moz-backface-visibility: $value;  /* Firefox */
         -ms-backface-visibility: $value;  /* IE10 */
             backface-visibility: $value;
+}
+// Position
+
+@mixin position-sticky() {
+	position: -webkit-sticky;
+	position: sticky;
 }
 
 // tab

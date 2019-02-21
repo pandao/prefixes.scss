@@ -29,12 +29,12 @@
   "homepage": "https://github.com/pandao/prefixes.scss",
   "devDependencies": {
     "dateformatter": "^0.1.0",
-    "gulp": "^3.8.10",
-    "gulp-concat": "^2.5.2",
-    "gulp-header": "^1.2.2",
-    "gulp-notify": "^2.1.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^2.0.1",
-    "gulp-util": "^3.0.1"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.12",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-util": "^3.0.8"
   }
 }
